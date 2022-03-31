@@ -4,8 +4,79 @@
 		<title>UKRCOTTAGE NEW</title>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="css/main.min.css" />
 	</head>
 
-	<body></body>
+	<body>
+		<header class="page-header">
+			<a class="logo" href="/">
+				<img class="logo__img" src="./images/logo.png" alt="" width="200" />
+				<p class="logo__title">Главная</p>
+			</a>
+
+			<button class="open-form-app" onclick="openFormApp()">Просчитать смету</button>
+		</header>
+
+		<!-- Форма подачи заявки -->
+		<div class="form-application-container">
+			<form class="form-application">
+				<svg class="form-application__close" onclick="closeFormApp()"><use href="./svg/icon-moon-pack.svg#cross"></use></svg>
+
+				<h3 class="form-application__title">Заявка на просчет сметы</h3>
+
+				<label class="form-application__field">
+					<input class="form-application__input" type="text" name="name" placeholder=" " required />
+					<span class="form-application__label">Имя<span class="form-application__mark">*</span></span>
+					<span class="form-application__icon form-application__icon-name"></span>
+				</label>
+
+				<label class="form-application__field">
+					<input class="form-application__input" type="tel" name="telephone" placeholder=" " required />
+					<span class="form-application__label">Телефон<span class="form-application__mark">*</span></span>
+					<span class="form-application__icon form-application__icon-tel"></span>
+				</label>
+
+				<label class="form-application__field">
+					<input class="form-application__input" type="email" name="email" placeholder=" " />
+					<span class="form-application__label">Email</span>
+					<span class="form-application__icon form-application__icon-mail"></span>
+				</label>
+
+				<label class="form-application__field"
+					><span class="form-application__description">Описание</span>
+					<textarea
+						class="form-application__textarea"
+						name="description"
+						rows="6"
+						placeholder="Чем более точными будут предоставленные материалы - тем более точными будут результаты просчета."
+					></textarea>
+				</label>
+
+				<label class="form-application__file">
+					<span>
+						Вы можете загрузить файл pdf, img... &nbsp;
+						<input class="form-application__load-file" type="file" name="file" />
+					</span>
+				</label>
+
+				<label class="form-application__policy">
+					<input class="form-application__checkbox" type="checkbox" name="policy" required />
+					<span class="form-application__icon-check"></span>
+					<span
+						>Я соглашаюсь с условиями <a class="form-application__link" href="https://ukrcottage.com.ua/politika-konfidenczialnosti" target="_blank">полити конфидециальности</a
+						><span class="form-application__mark">*</span></span
+					>
+				</label>
+
+				<div class="form-application__button-submit-container">
+					<button class="form-application__button-submit" type="submit">Отправить</button>
+				</div>
+			</form>
+		</div>
+
+		<script src="js/main.js"></script>
+	</body>
 </html>
