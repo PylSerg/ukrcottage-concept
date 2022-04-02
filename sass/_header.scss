@@ -12,21 +12,18 @@
 	background-color: var(--main-color);
 	z-index: 99;
 
-	@media screen and (max-width: 765px) {
+	@media screen and (max-width: 767px) {
 		position: absolute;
+	}
+
+	@media screen and (min-width: 1366px) {
+		height: 60px;
 	}
 }
 
 .logo {
-	display: flex;
-	align-items: center;
-
-	margin-top: 0;
-	margin-bottom: 0;
 	margin-left: -180px;
 	margin-right: 50px;
-
-	overflow: hidden;
 
 	@media screen and (max-width: 1365px) {
 		margin-left: -100px;
@@ -34,9 +31,18 @@
 	}
 }
 
+.logo__link {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
 .logo__img {
 	display: block;
 	opacity: 1;
+
+	margin: 0;
+	padding: 0;
 
 	transform: translate(0, 0);
 	transition: all 200ms linear;
@@ -53,7 +59,7 @@
 }
 
 .logo__title {
-	display: inline-block;
+	display: block;
 	opacity: 0;
 
 	color: #fff;
@@ -78,7 +84,13 @@
 	opacity: 1;
 }
 
-.open-form-app {
+.open-form {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.open-form__app {
 	color: #fff;
 
 	height: 100%;
