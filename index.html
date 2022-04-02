@@ -15,29 +15,65 @@
 			<div class="logo">
 				<a class="logo__link" href="/">
 					<p class="logo__title">Главная</p>
-					<img class="logo__img" src="./images/logo.png" alt="logo" width="200" />
+					<img class="logo__img" src="./images/png/logo.png" alt="logo" width="200" />
 				</a>
 			</div>
 
 			<div class="open-form">
 				<button class="open-form__app" onclick="openFormApp()">Просчитать смету</button>
 			</div>
+			<nav class="nav-desktop"></nav>
 		</header>
 
 		<nav class="nav-mobile">
 			<ul class="nav-mobile__menu">
-				<li class="nav-mobie__item">up</li>
-				<li class="nav-mobie__item">serch</li>
-				<li class="nav-mobie__item">menu</li>
-				<li class="nav-mobie__item">map</li>
-				<li class="nav-mobie__item">tel</li>
+				<li class="nav-mobile__item">
+					<button class="nav-mobile__button" type="button">
+						<svg class="nav-mobile__icon">
+							<use href="./images/svg/icon-moon-pack.svg#phone"></use>
+						</svg>
+						<span class="nav-mobile__lable">Контакты</span>
+					</button>
+				</li>
+				<li class="nav-mobile__item">
+					<button class="nav-mobile__button" type="button">
+						<svg class="nav-mobile__icon">
+							<use href="./images/svg/icon-moon-pack.svg#map2"></use>
+						</svg>
+						<span class="nav-mobile__lable">Карта</span>
+					</button>
+				</li>
+				<li class="nav-mobile__item">
+					<button class="nav-mobile__button" type="button">
+						<svg class="nav-mobile__icon">
+							<use href="./images/svg/icon-moon-pack.svg#menu"></use>
+						</svg>
+						<span class="nav-mobile__lable">Меню</span>
+					</button>
+				</li>
+				<li class="nav-mobile__item">
+					<button class="nav-mobile__button" type="button">
+						<svg class="nav-mobile__icon">
+							<use href="./images/svg/icon-moon-pack.svg#search"></use>
+						</svg>
+						<span class="nav-mobile__lable">Поиск</span>
+					</button>
+				</li>
+				<li class="nav-mobile__item">
+					<button class="nav-mobile__button" type="button">
+						<svg class="nav-mobile__icon">
+							<use href="./images/svg/icon-moon-pack.svg#circle-up"></use>
+						</svg>
+						<span class="nav-mobile__lable">Наверх</span>
+					</button>
+				</li>
 			</ul>
 		</nav>
 
 		<!-- Форма подачи заявки -->
 		<div class="form-application-container">
 			<form class="form-application">
-				<svg class="form-application__close" onclick="closeFormApp()"><use href="./svg/icon-moon-pack.svg#cross"></use></svg>
+				<svg class="form-application__close" onclick="closeFormApp()"><use href="./images/svg/icon-moon-pack.svg#cross"></use></svg>
 
 				<h3 class="form-application__title">Заявка на просчет сметы</h3>
 

@@ -146,6 +146,81 @@ a {
   cursor: pointer;
 }
 
+.nav-mobile {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 6px 20px #333;
+          box-shadow: 0 6px 20px #333;
+}
+
+@media screen and (max-width: 765px) {
+  .nav-mobile {
+    visibility: visible;
+  }
+}
+
+.nav-mobile__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-mobile__item {
+  height: 100%;
+}
+
+.nav-mobile__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0 10px;
+  border: 0;
+  background-color: #fff;
+}
+
+.nav-mobile__icon {
+  display: block;
+  width: 26px;
+  height: 26px;
+  fill: #888;
+}
+
+.nav-mobile__lable {
+  display: block;
+  font-size: 14px;
+  color: #777;
+}
+
 .form-application-container {
   position: fixed;
   top: 40px;
@@ -289,30 +364,30 @@ a {
 }
 
 .form-application__icon-name {
-  background-image: url(../png/user.png);
+  background-image: url(../images/png/user.png);
 }
 
 .form-application__input:focus ~ .form-application__icon-name,
 .form-application__input:not(:placeholder-shown) ~ .form-application__icon-name {
-  background-image: url(../png/user-act.png);
+  background-image: url(../images/png/user-act.png);
 }
 
 .form-application__icon-tel {
-  background-image: url(../png/telephone.png);
+  background-image: url(../images/png/telephone.png);
 }
 
 .form-application__input:focus ~ .form-application__icon-tel,
 .form-application__input:not(:placeholder-shown) ~ .form-application__icon-tel {
-  background-image: url(../png/telephone-act.png);
+  background-image: url(../images/png/telephone-act.png);
 }
 
 .form-application__icon-mail {
-  background-image: url(../png/email.png);
+  background-image: url(../images/png/email.png);
 }
 
 .form-application__input:focus ~ .form-application__icon-mail,
 .form-application__input:not(:placeholder-shown) ~ .form-application__icon-mail {
-  background-image: url(../png/email-act.png);
+  background-image: url(../images/png/email-act.png);
 }
 
 .form-application__textarea {
@@ -403,7 +478,7 @@ a {
 .form-application__checkbox:checked + .form-application__icon-check {
   border-color: #fa6400;
   background-color: #fa6400;
-  background-image: url(../svg/checkmark.svg);
+  background-image: url(../images/svg/checkmark.svg);
   background-repeat: no-repeat;
 }
 
