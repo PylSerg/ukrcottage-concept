@@ -242,8 +242,8 @@ a {
   bottom: 65px;
   -webkit-transform: translateX(-150%);
           transform: translateX(-150%);
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,8 +301,8 @@ a {
 .mobile-menu, .mobile-contacts {
   position: absolute;
   bottom: 65px;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
   width: 70vw;
   background-color: #fff;
   border-radius: 10px;
@@ -333,7 +333,8 @@ a {
 .mobile-menu__link, .mobile-contacts__link {
   display: block;
   text-align: center;
-  color: var(--main-color);
+  color: #d64f00;
+  font-size: 20px;
   padding: 20px;
 }
 
@@ -345,20 +346,22 @@ a {
 .visible-search {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
 }
 
 .visible-menu {
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
 }
 
 .visible-contacts {
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 
 .form-application-container {
