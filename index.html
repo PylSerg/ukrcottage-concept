@@ -12,6 +12,7 @@
 	</head>
 
 	<body>
+		<!-- Header -->
 		<header class="page-header">
 			<div class="logo">
 				<a class="logo__link" href="/">
@@ -23,164 +24,163 @@
 			<div class="open-form">
 				<button class="open-form__app" onclick="openFormApp()">Просчитать смету</button>
 			</div>
+
+			<!-- Application Form -->
+			<div class="form-application-container">
+				<form class="form-application">
+					<svg class="form-application__close" onclick="closeFormApp()"><use href="./images/svg/icon-moon-pack.svg#cross"></use></svg>
+
+					<h3 class="form-application__title">Заявка на просчет сметы</h3>
+
+					<label class="form-application__field">
+						<input class="form-application__input" type="text" name="name" placeholder=" " required />
+						<span class="form-application__label">Имя<span class="form-application__mark">*</span></span>
+						<span class="form-application__icon form-application__icon-name"></span>
+					</label>
+
+					<label class="form-application__field">
+						<input class="form-application__input" type="tel" name="telephone" placeholder=" " required />
+						<span class="form-application__label">Телефон<span class="form-application__mark">*</span></span>
+						<span class="form-application__icon form-application__icon-tel"></span>
+					</label>
+
+					<label class="form-application__field">
+						<input class="form-application__input" type="email" name="email" placeholder=" " />
+						<span class="form-application__label">Email</span>
+						<span class="form-application__icon form-application__icon-mail"></span>
+					</label>
+
+					<label class="form-application__field"
+						><span class="form-application__description">Описание</span>
+						<textarea
+							class="form-application__textarea"
+							name="description"
+							rows="6"
+							placeholder="Чем более точными будут предоставленные материалы - тем более точными будут результаты просчета."
+						></textarea>
+					</label>
+
+					<label class="form-application__file">
+						<span>
+							Вы можете загрузить файл pdf, img... &nbsp;
+							<input class="form-application__load-file" type="file" name="file" />
+						</span>
+					</label>
+
+					<label class="form-application__policy">
+						<input class="form-application__checkbox" type="checkbox" name="policy" required />
+						<span class="form-application__icon-check"></span>
+						<span
+							>Я соглашаюсь с условиями <a class="form-application__link" href="https://ukrcottage.com.ua/politika-konfidenczialnosti" target="_blank">полити конфидециальности</a
+							><span class="form-application__mark">*</span></span
+						>
+					</label>
+
+					<div class="form-application__button-submit-container">
+						<button class="form-application__button-submit" type="submit">Отправить</button>
+					</div>
+				</form>
+			</div>
+
+			<!-- Mobile nav-bar -->
+			<nav class="nav-mobile">
+				<ul class="nav-mobile__tools">
+					<li class="nav-mobile__item">
+						<button class="nav-mobile__button" type="button" onclick="location.href='/'">
+							<svg class="nav-mobile__icon">
+								<use href="./images/svg/icon-moon-pack.svg#home"></use>
+							</svg>
+							<span class="nav-mobile__lable">Главная</span>
+						</button>
+					</li>
+
+					<li class="nav-mobile__item">
+						<button class="nav-mobile__button" type="button">
+							<svg class="nav-mobile__icon">
+								<use href="./images/svg/icon-moon-pack.svg#search"></use>
+							</svg>
+							<span class="nav-mobile__lable">Поиск</span>
+						</button>
+					</li>
+
+					<li class="nav-mobile__item">
+						<button class="nav-mobile__button" type="button" data-menu-button>
+							<svg class="nav-mobile__icon">
+								<use href="./images/svg/icon-moon-pack.svg#menu"></use>
+							</svg>
+							<span class="nav-mobile__lable">Меню</span>
+						</button>
+					</li>
+
+					<li class="nav-mobile__item">
+						<button class="nav-mobile__button" type="button">
+							<svg class="nav-mobile__icon">
+								<use href="./images/svg/icon-moon-pack.svg#phone"></use>
+							</svg>
+							<span class="nav-mobile__lable">Контакты</span>
+						</button>
+					</li>
+
+					<li class="nav-mobile__item">
+						<button class="nav-mobile__button" type="button" onclick="toTop()">
+							<svg class="nav-mobile__icon">
+								<use href="./images/svg/icon-moon-pack.svg#circle-up"></use>
+							</svg>
+							<span class="nav-mobile__lable">Наверх</span>
+						</button>
+					</li>
+				</ul>
+
+				<!-- Mobile menu -->
+				<ul class="mobile-menu" data-menu>
+					<li class="mobile-menu__item">
+						<a href="" class="mobile-menu__link">Проекты</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="" class="mobile-menu__link">Гарантии</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="" class="mobile-menu__link">Отзывы</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="" class="mobile-menu__link">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- Desktop nav-bar -->
 			<nav class="nav-desktop"></nav>
 		</header>
 
-		<nav class="nav-mobile">
-			<ul class="nav-mobile__tools">
-				<li class="nav-mobile__item">
-					<button class="nav-mobile__button" type="button">
-						<svg class="nav-mobile__icon">
-							<use href="./images/svg/icon-moon-pack.svg#phone"></use>
-						</svg>
-						<span class="nav-mobile__lable">Контакты</span>
-					</button>
-				</li>
-				<li class="nav-mobile__item">
-					<button class="nav-mobile__button" type="button">
-						<svg class="nav-mobile__icon">
-							<use href="./images/svg/icon-moon-pack.svg#map2"></use>
-						</svg>
-						<span class="nav-mobile__lable">Карта</span>
-					</button>
-				</li>
-				<li class="nav-mobile__item">
-					<button class="nav-mobile__button" type="button" data-menu-button>
-						<svg class="nav-mobile__icon">
-							<use href="./images/svg/icon-moon-pack.svg#menu"></use>
-						</svg>
-						<span class="nav-mobile__lable">Меню</span>
-					</button>
-				</li>
-				<li class="nav-mobile__item">
-					<button class="nav-mobile__button" type="button">
-						<svg class="nav-mobile__icon">
-							<use href="./images/svg/icon-moon-pack.svg#search"></use>
-						</svg>
-						<span class="nav-mobile__lable">Поиск</span>
-					</button>
-				</li>
-				<li class="nav-mobile__item">
-					<button class="nav-mobile__button" type="button" onclick="toTop()">
-						<svg class="nav-mobile__icon">
-							<use href="./images/svg/icon-moon-pack.svg#circle-up"></use>
-						</svg>
-						<span class="nav-mobile__lable">Наверх</span>
-					</button>
-				</li>
-			</ul>
-
-			<!-- Мобильное меню -->
-			<ul class="mobile-menu" data-menu>
-				<li class="mobile-menu__item">
-					<a href="" class="mobile-menu__link">Проекты</a>
-				</li>
-				<li class="mobile-menu__item">
-					<a href="" class="mobile-menu__link">Гарантии</a>
-				</li>
-				<li class="mobile-menu__item">
-					<a href="" class="mobile-menu__link">Отзывы</a>
-				</li>
-				<li class="mobile-menu__item">
-					<a href="" class="mobile-menu__link">Контакты</a>
-				</li>
-			</ul>
-		</nav>
-
-		<!-- Форма подачи заявки -->
-		<div class="form-application-container">
-			<form class="form-application">
-				<svg class="form-application__close" onclick="closeFormApp()"><use href="./images/svg/icon-moon-pack.svg#cross"></use></svg>
-
-				<h3 class="form-application__title">Заявка на просчет сметы</h3>
-
-				<label class="form-application__field">
-					<input class="form-application__input" type="text" name="name" placeholder=" " required />
-					<span class="form-application__label">Имя<span class="form-application__mark">*</span></span>
-					<span class="form-application__icon form-application__icon-name"></span>
-				</label>
-
-				<label class="form-application__field">
-					<input class="form-application__input" type="tel" name="telephone" placeholder=" " required />
-					<span class="form-application__label">Телефон<span class="form-application__mark">*</span></span>
-					<span class="form-application__icon form-application__icon-tel"></span>
-				</label>
-
-				<label class="form-application__field">
-					<input class="form-application__input" type="email" name="email" placeholder=" " />
-					<span class="form-application__label">Email</span>
-					<span class="form-application__icon form-application__icon-mail"></span>
-				</label>
-
-				<label class="form-application__field"
-					><span class="form-application__description">Описание</span>
-					<textarea
-						class="form-application__textarea"
-						name="description"
-						rows="6"
-						placeholder="Чем более точными будут предоставленные материалы - тем более точными будут результаты просчета."
-					></textarea>
-				</label>
-
-				<label class="form-application__file">
-					<span>
-						Вы можете загрузить файл pdf, img... &nbsp;
-						<input class="form-application__load-file" type="file" name="file" />
-					</span>
-				</label>
-
-				<label class="form-application__policy">
-					<input class="form-application__checkbox" type="checkbox" name="policy" required />
-					<span class="form-application__icon-check"></span>
-					<span
-						>Я соглашаюсь с условиями <a class="form-application__link" href="https://ukrcottage.com.ua/politika-konfidenczialnosti" target="_blank">полити конфидециальности</a
-						><span class="form-application__mark">*</span></span
-					>
-				</label>
-
-				<div class="form-application__button-submit-container">
-					<button class="form-application__button-submit" type="submit">Отправить</button>
-				</div>
-			</form>
-		</div>
+		<!-- Main content -->
+		<main>
+			<section class="hero">
+				<div class="hero__content"></div>
+			</section>
+		</main>
 
 		<div>
-			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi placeat ad molestiae vitae iure doloribus accusantium eligendi facilis non, odio optio, accusamus aspernatur in aliquam
-			nisi, alias velit debitis eos. Dolor blanditiis optio expedita consequatur, officiis aut delectus enim exercitationem, ratione porro tempora modi minima dignissimos autem inventore
-			laudantium qui sit dolore voluptatum. Quia vero ipsam tempora consequatur architecto amet temporibus dolorum quas earum recusandae ullam, nam sequi repellendus! Asperiores, fuga suscipit
-			voluptas, distinctio esse laudantium illum nostrum nihil dolore voluptatibus mollitia quis qui sunt eveniet recusandae! Nam nihil, iure excepturi quaerat architecto dolore saepe alias qui,
-			ipsa impedit quae consectetur deleniti repudiandae provident accusamus cum minus laudantium labore accusantium modi consequatur! Illo soluta mollitia dolores minus. Molestias inventore,
-			tenetur soluta sequi eveniet recusandae explicabo temporibus reiciendis maxime, aliquid, commodi eligendi nihil blanditiis minus itaque earum aspernatur quam dolore dignissimos mollitia
-			non. Nemo minima qui aut illum ab magni autem voluptates sed fugiat nobis architecto, cupiditate excepturi officiis ipsum ipsa consectetur non eum itaque. Nobis laboriosam distinctio sequi
-			ipsa culpa labore, quaerat velit laudantium magni ad, aliquam perspiciatis eligendi tempore quibusdam debitis quasi minus harum. Sed cumque incidunt voluptas adipisci vitae vel voluptate
-			suscipit laudantium beatae facere quasi sunt eum aperiam fugit alias unde, ducimus pariatur assumenda magni! A dignissimos facilis temporibus sapiente velit cupiditate iste placeat autem
-			eos quibusdam! Maxime debitis aut asperiores accusantium repellendus dolorem ducimus impedit adipisci temporibus animi porro quia minus accusamus distinctio, iusto iste voluptatibus itaque
-			id cupiditate quisquam quis obcaecati. Natus, fugiat autem. Soluta quidem obcaecati ipsam iure explicabo officia, laboriosam officiis neque a autem reprehenderit ullam! Quia tenetur
-			veritatis omnis debitis similique quas! Ut a quas autem iste dolore eveniet aperiam dignissimos, corporis molestias, voluptate explicabo deserunt consequuntur? Consequatur nisi est
-			reiciendis nihil, veniam architecto aspernatur ex laudantium? Corporis, dolores tempora dolorem possimus voluptatibus ducimus ad maiores? Ab, sint. Ut sit repellat illo vel odio nobis
-			possimus corrupti doloribus quibusdam quisquam ad nulla, non nisi velit, sint officiis pariatur voluptatum temporibus quis alias maiores. Accusantium numquam quod beatae accusamus ipsum
-			rerum mollitia corrupti nulla debitis dolorem iure quas repudiandae iste ratione labore, maiores laborum eligendi. Accusamus possimus soluta excepturi dolorem voluptate dolore eveniet
-			deleniti, quasi, quam placeat iste impedit, nobis aut dolorum ducimus molestiae temporibus molestias dolor. Corrupti, consequuntur repellendus! Magni suscipit culpa dicta! Possimus odio
-			aperiam quam fuga quas, necessitatibus quidem obcaecati tempore omnis fugit ratione iusto rem corrupti repudiandae soluta laboriosam earum ut perferendis aliquam sequi quos eum cum quo?
-			Expedita ducimus adipisci blanditiis in voluptas nulla incidunt nihil, ipsa reiciendis fugiat obcaecati. Excepturi rem, culpa sit ad dolores temporibus quam fugit voluptatum quia illo
-			fugiat sint animi corrupti quaerat expedita, architecto deserunt hic sequi autem, omnis minima quis inventore explicabo. Libero voluptatibus dolorem voluptatum molestiae quo dolorum
-			molestias consectetur dolore corrupti dignissimos totam dicta hic voluptas aperiam eos sint dolor officia, quibusdam ipsam? Et quis doloremque veritatis nam voluptatem. Voluptatum nobis
-			officiis minima beatae distinctio porro explicabo labore, cum, velit nihil nostrum a facilis ab provident quae delectus placeat cumque!
-		</div>
-
-		<div>
-			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, a recusandae vitae ex numquam omnis qui dolorem, amet, vero ad adipisci quasi. Labore, voluptatibus. Est, iste aut! Odit,
-			eveniet. Officia nisi enim soluta illum nesciunt a animi? Placeat, illum excepturi. Inventore sapiente optio sint impedit ratione aliquid assumenda nam nesciunt non unde illo doloribus
-			dolorum quam reiciendis officia, repellat quos minus quidem ullam perferendis iste magnam deserunt ut molestias. Omnis alias neque illo distinctio impedit cum illum hic sint ipsum
-			voluptatum aut molestias voluptatem aliquam dolor repellendus quas qui, nisi ab reprehenderit, adipisci quibusdam cumque corrupti. Aliquid sunt temporibus, dicta debitis quos ratione
-			consequuntur dolorem officiis quidem, numquam deserunt atque expedita, minima excepturi iste deleniti quasi vel et! Officiis deserunt a animi omnis? Nihil corporis eum atque illum odio non
-			nesciunt obcaecati consequatur dignissimos laboriosam, sit nostrum blanditiis ducimus sunt adipisci provident! Nemo eaque fugiat assumenda error voluptatibus? Nesciunt repellat quas aut
-			obcaecati voluptatem praesentium culpa beatae, natus iure error quos consequatur quisquam at corporis est placeat, nemo aperiam ipsa commodi dolor. Fugiat saepe ab excepturi mollitia error
-			ullam labore, temporibus, earum expedita ea voluptatum recusandae soluta, laborum incidunt corrupti perspiciatis atque possimus cum? Vel ex ea itaque saepe unde modi eius a placeat
-			nostrum. Corporis, ducimus perspiciatis vitae aliquam quod modi praesentium voluptate fugiat officiis magni soluta similique placeat eveniet aperiam error possimus ut adipisci reiciendis.
-			Fugit cum architecto voluptatum iusto, asperiores vitae quia voluptates incidunt, accusamus minima quisquam ex vero alias, nulla maiores quo? At tempore voluptas praesentium, quidem odit
-			facilis quod accusamus exercitationem fuga cum, est quo quibusdam sequi similique nostrum omnis, impedit quis nam doloribus voluptatum veritatis nulla nesciunt. Facilis ducimus commodi quo
-			ab fugit doloremque impedit rerum adipisci minus, saepe repellendus animi incidunt voluptates, repellat optio amet itaque necessitatibus possimus odit! Tenetur provident ratione quia?
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum aspernatur vitae ex similique tempora ullam provident, commodi velit aut dolorum incidunt quam delectus cupiditate
+			exercitationem debitis ipsa quo quaerat modi mollitia facilis! Blanditiis tempore excepturi cum quod atque veniam sapiente aperiam in molestias, temporibus omnis error itaque asperiores?
+			Dolores voluptates voluptatum est pariatur error cumque culpa eaque vel voluptas a unde voluptatibus rerum saepe debitis commodi aliquam fuga mollitia, suscipit magnam, tenetur expedita.
+			Quasi, nemo accusantium vero cumque suscipit reiciendis labore itaque eaque animi nulla voluptates unde ea atque obcaecati, quia id numquam possimus fugit dolorum corrupti porro eveniet
+			magnam? Quis animi laboriosam itaque delectus hic sunt aperiam tempore illum assumenda dolor repellat architecto, dolore iste suscipit voluptates porro rerum sit in? Ipsa, modi autem?
+			Deserunt quibusdam quisquam similique, accusamus porro tenetur esse saepe vero nulla nobis quod incidunt explicabo commodi nesciunt alias impedit quos. Commodi animi odit dolor iste saepe
+			quaerat dolorum laborum expedita labore non, aspernatur, soluta et! Numquam beatae obcaecati sapiente neque aut assumenda facere corrupti nam sint? Laborum neque excepturi autem aliquam!
+			Assumenda debitis ea itaque quis animi dolorum incidunt quasi temporibus eum commodi necessitatibus, corporis reiciendis repellat quae suscipit consequatur, ratione provident. Nobis, vel.
+			Eius veritatis, deleniti porro necessitatibus architecto illum aperiam similique? Placeat illum culpa beatae perferendis adipisci fugit incidunt quod magni quos. Exercitationem odio vero
+			molestias, sapiente dolore aliquam culpa. Facilis temporibus possimus autem voluptates tempore corporis fuga? Minus perferendis ab, culpa quod molestias ipsam fugiat esse eius. Quibusdam
+			omnis veritatis dolores ducimus doloribus, veniam mollitia necessitatibus distinctio, ex ad, officia repellat neque saepe fugiat. Perferendis consectetur alias exercitationem iste
+			suscipit, vitae fugiat rem modi nobis voluptates obcaecati minus, commodi, voluptas aut! Consequuntur repellendus fugit voluptatem, dolorum aspernatur facere expedita in veritatis
+			inventore obcaecati, velit magni dolores odit perspiciatis fugiat ut facilis, architecto accusantium nobis reprehenderit? Eaque, delectus? Facere, corrupti. Aliquid, alias nam obcaecati
+			sint voluptatibus laboriosam sapiente, quam aut tempore unde similique, quas numquam. Obcaecati quam, hic perspiciatis illo excepturi officia ullam nostrum eum, sapiente animi magnam
+			explicabo rem quae, nulla nihil optio? Voluptate molestias aliquam laborum, reprehenderit iusto perferendis, fuga quo dolorum provident consequatur, quis eaque dicta ipsum illo at ducimus
+			vero harum quas alias tempore? Doloremque, esse consequatur beatae sed magnam inventore asperiores vero numquam reprehenderit aperiam, sequi ratione nemo. Harum fuga, facere ab iure qui
+			voluptatum! Cum, reprehenderit eum saepe adipisci optio voluptate, dolores porro ut quasi, minima quae eaque dolorem? Porro distinctio nemo officia soluta necessitatibus quam quod,
+			repudiandae, nisi sunt quae id deleniti dolorum? Deleniti ipsa labore doloremque rem commodi cumque. Maiores, modi illo delectus ab molestias obcaecati alias minima consequuntur adipisci
+			voluptatum soluta quaerat at quo nesciunt molestiae architecto iure cupiditate aut porro fugit veniam explicabo recusandae, vero consectetur. Iste maxime ex similique ipsa magnam?
+			Consectetur quasi nemo neque rem quis. Vel ad corrupti dignissimos facilis unde incidunt doloribus cumque? Sit delectus ipsam aliquid. Ducimus dolores iusto eligendi impedit ab, et
+			doloremque libero nemo aperiam maxime molestias, tempore sed qui adipisci, eius officia quos facere.
 		</div>
 
 		<script src="js/main.js"></script>
