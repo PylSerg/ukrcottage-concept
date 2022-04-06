@@ -9,14 +9,6 @@ function closeFormApp() {
 
 }
 
-(() => {
-    const menuBtn = document.querySelector("[data-menu-button]");
-
-    menuBtn.addEventListener("click", () => {
-        menuBtn.classList.toggle("active-button");
-    });
-})();
-
 function toTop() {
     let t;
     let top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
@@ -26,3 +18,13 @@ function toTop() {
     } else clearTimeout(t);
     return false;
 }
+
+(() => {
+    const menuBtn = document.querySelector("[data-menu-button]");
+    const menuList = document.querySelector("[data-menu]");
+
+    menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active-button");
+        menuList.classList.toggle("visible");
+    });
+})();
