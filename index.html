@@ -27,7 +27,7 @@
 		</header>
 
 		<nav class="nav-mobile">
-			<ul class="nav-mobile__menu">
+			<ul class="nav-mobile__tools">
 				<li class="nav-mobile__item">
 					<button class="nav-mobile__button" type="button">
 						<svg class="nav-mobile__icon">
@@ -45,7 +45,7 @@
 					</button>
 				</li>
 				<li class="nav-mobile__item">
-					<button class="nav-mobile__button" type="button">
+					<button class="nav-mobile__button" type="button" data-menu-button>
 						<svg class="nav-mobile__icon">
 							<use href="./images/svg/icon-moon-pack.svg#menu"></use>
 						</svg>
@@ -61,12 +61,27 @@
 					</button>
 				</li>
 				<li class="nav-mobile__item">
-					<button class="nav-mobile__button" type="button">
+					<button class="nav-mobile__button" type="button" onclick="toTop()">
 						<svg class="nav-mobile__icon">
 							<use href="./images/svg/icon-moon-pack.svg#circle-up"></use>
 						</svg>
 						<span class="nav-mobile__lable">Наверх</span>
 					</button>
+				</li>
+			</ul>
+
+			<ul class="mobile-menu">
+				<li class="mobile-menu__item">
+					<a href="" class="mobile-menu__link">Проекты</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="" class="mobile-menu__link">Гарантии</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="" class="mobile-menu__link">Отзывы</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="" class="mobile-menu__link">Контакты</a>
 				</li>
 			</ul>
 		</nav>
