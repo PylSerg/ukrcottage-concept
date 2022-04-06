@@ -75,6 +75,7 @@
     fill: var(--main-color);
 }
 
+// Menu
 .mobile-menu {
     position: absolute;
     left: 50%;
@@ -106,6 +107,7 @@
 
     text-align: center;
     color: var(--main-color);
+    // font-weight: 700;
 
     padding: 20px;
 }
@@ -115,7 +117,35 @@
     color: #fff;
 }
 
-.visible {
+// Contacts
+.mobile-contacts {
+    position: absolute;
+    right: 5px;
+    bottom: 65px;
+
+    transform: translate(0%, 150%);
+    transition: all 100ms linear;
+
+    background-color: #fff;
+
+    width: 70vw;
+
+    border-radius: 10px;
+    box-shadow: 1px -1px 10px #777;
+
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+
+    z-index: 997;
+}
+
+.visible-menu {
     transform: translate(-50%, 0%);
+    transition: all 100ms linear;
+}
+
+.visible-contacts {
+    transform: translate(0%, 0%);
     transition: all 100ms linear;
 }

@@ -19,12 +19,35 @@ function toTop() {
     return false;
 }
 
+
+const searchBtn = document.querySelector("[data-search-button]");
+const menuBtn = document.querySelector("[data-menu-button]");
+const contactsBtn = document.querySelector("[data-contacts-button]");
+
+const menuList = document.querySelector("[data-menu]");
+const contactsList = document.querySelector("[data-contacts]");
+
 (() => {
-    const menuBtn = document.querySelector("[data-menu-button]");
-    const menuList = document.querySelector("[data-menu]");
+
+    searchBtn.addEventListener("click", () => {
+        searchBtn.classList.toggle("active-button");
+
+        menuBtn.classList.remove("active-button");
+        menuList.classList.remove("visible-menu");       
+    });   
 
     menuBtn.addEventListener("click", () => {
         menuBtn.classList.toggle("active-button");
-        menuList.classList.toggle("visible");
+        menuList.classList.toggle("visible-menu");
+
+        searchBtn.classList.remove("active-button");
     });
+
+    contactsBtn.addEventListener("click", () => {
+        contactsBtn.classList.toggle("active-button");
+        contactsList.classList.toggle("visible-contacts");
+
+        menuBtn.classList.remove("active-button");
+        menuList.classList.remove("visible-menu");       
+    });    
 })();
