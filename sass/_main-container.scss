@@ -1,13 +1,16 @@
 // Common styles
 .about-us,
 .advantages,
-.answers {
+.answers,
+.submit {
 	padding: 10px;
 }
 
 .about-us__title,
 .advantages__title,
-.answers__title {
+.answers__title,
+.submit__title {
+	font-size: 24px;
 }
 
 // About us
@@ -78,4 +81,19 @@
 		width: 512px;
 		height: 288px;
 	}
+}
+
+.submit {
+}
+
+.submit__title {
+}
+
+.submit__description {
+}
+
+.submit__application {
+}
+
+.submit__callback {
 }
