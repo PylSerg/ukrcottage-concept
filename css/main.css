@@ -298,7 +298,8 @@ a {
           transform: rotateY(180deg);
 }
 
-.mobile-menu, .mobile-contacts {
+.mobile-menu,
+.mobile-contacts {
   position: absolute;
   bottom: 65px;
   -webkit-transition: all 150ms linear;
@@ -326,19 +327,22 @@ a {
           transform: translate(0%, 150%);
 }
 
-.mobile-menu__item:not(:last-child), .mobile-contacts__item:not(:last-child) {
+.mobile-menu__item:not(:last-child),
+.mobile-contacts__item:not(:last-child) {
   border-bottom: 1px solid #ddd;
 }
 
-.mobile-menu__link, .mobile-contacts__link {
+.mobile-menu__link,
+.mobile-contacts__link {
   display: block;
   text-align: center;
   color: #d64f00;
-  font-size: 20px;
+  font-size: 18px;
   padding: 20px;
 }
 
-.mobile-menu__link:hover, .mobile-contacts__link:hover {
+.mobile-menu__link:hover,
+.mobile-contacts__link:hover {
   background-color: var(--main-color);
   color: #fff;
 }
