@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk-UA">
 	<head>
 		<title>UKRCOTTAGE</title>
 		<meta charset="UTF-8" />
@@ -16,13 +16,13 @@
 		<header class="page-header">
 			<div class="logo">
 				<a class="logo__link" href="/">
-					<p class="logo__title">Главная</p>
+					<p class="logo__title">Головна</p>
 					<img class="logo__img" src="./images/png/logo.png" alt="logo" width="200" />
 				</a>
 			</div>
 
 			<div class="open-form">
-				<button class="open-form__app" onclick="openFormApp()">Просчитать смету</button>
+				<button class="open-form__app" onclick="openFormApp()">Прорахувати кошторис</button>
 			</div>
 
 			<!-- Application Form -->
@@ -30,11 +30,11 @@
 				<form class="form-application">
 					<svg class="form-application__close" onclick="closeFormApp()"><use href="./images/svg/icon-moon-pack.svg#cross"></use></svg>
 
-					<h3 class="form-application__title">Заявка на просчет сметы</h3>
+					<h3 class="form-application__title">Заявка на прорахунок кошторису</h3>
 
 					<label class="form-application__field">
 						<input class="form-application__input" type="text" name="name" placeholder=" " required />
-						<span class="form-application__label">Имя<span class="form-application__mark">*</span></span>
+						<span class="form-application__label">Ім'я<span class="form-application__mark">*</span></span>
 						<span class="form-application__icon form-application__icon-name"></span>
 					</label>
 
@@ -51,18 +51,18 @@
 					</label>
 
 					<label class="form-application__field"
-						><span class="form-application__description">Описание</span>
+						><span class="form-application__description">Опис</span>
 						<textarea
 							class="form-application__textarea"
 							name="description"
 							rows="6"
-							placeholder="Чем более точными будут предоставленные материалы - тем более точными будут результаты просчета."
+							placeholder="Чим точнішими будуть надані матеріали – тим точнішими будуть результати прорахунку."
 						></textarea>
 					</label>
 
 					<label class="form-application__file">
 						<span>
-							Вы можете загрузить файл pdf, img... &nbsp;
+							Ви можете завантажити файл pdf, img... &nbsp;
 							<input class="form-application__load-file" type="file" name="file" />
 						</span>
 					</label>
@@ -71,13 +71,13 @@
 						<input class="form-application__checkbox" type="checkbox" name="policy" required />
 						<span class="form-application__icon-check"></span>
 						<span
-							>Я соглашаюсь с условиями <a class="form-application__link" href="https://ukrcottage.com.ua/politika-konfidenczialnosti" target="_blank">полити конфидециальности</a
+							>Я погоджуюсь з умовами <a class="form-application__link" href="https://ukrcottage.com.ua/politika-konfidenczialnosti" target="_blank">політики конфіденційності</a
 							><span class="form-application__mark">*</span></span
 						>
 					</label>
 
 					<div class="form-application__button-submit-container">
-						<button class="form-application__button-submit" type="submit">Отправить</button>
+						<button class="form-application__button-submit" type="submit">Відправити</button>
 					</div>
 				</form>
 			</div>
@@ -90,7 +90,7 @@
 							<svg class="nav-mobile__icon">
 								<use href="./images/svg/icon-moon-pack.svg#home"></use>
 							</svg>
-							<span class="nav-mobile__lable">Главная</span>
+							<span class="nav-mobile__lable">Головна</span>
 						</button>
 					</li>
 
@@ -99,7 +99,7 @@
 							<svg class="nav-mobile__icon">
 								<use href="./images/svg/icon-moon-pack.svg#search"></use>
 							</svg>
-							<span class="nav-mobile__lable">Поиск</span>
+							<span class="nav-mobile__lable">Пошук</span>
 						</button>
 					</li>
 
@@ -117,7 +117,7 @@
 							<svg class="nav-mobile__icon">
 								<use href="./images/svg/icon-moon-pack.svg#phone"></use>
 							</svg>
-							<span class="nav-mobile__lable">Контакты</span>
+							<span class="nav-mobile__lable">Контакти</span>
 						</button>
 					</li>
 
@@ -126,14 +126,14 @@
 							<svg class="nav-mobile__icon">
 								<use href="./images/svg/icon-moon-pack.svg#circle-up"></use>
 							</svg>
-							<span class="nav-mobile__lable">Наверх</span>
+							<span class="nav-mobile__lable">Нагору</span>
 						</button>
 					</li>
 				</ul>
 
 				<!-- Search -->
 				<div class="search" data-search>
-					<input type="text" class="search__field" placeholder="Я ищу..." />
+					<input type="text" class="search__field" placeholder="Я шукаю..." />
 					<button class="search__button" type="button" data-search-start>
 						<svg class="search__icon">
 							<use href="./images/svg/icon-moon-pack.svg#search"></use>
@@ -144,26 +144,26 @@
 				<!-- Mobile menu -->
 				<ul class="mobile-menu" data-menu>
 					<li class="mobile-menu__item">
-						<a href="" class="mobile-menu__link">Проекты</a>
+						<a href="" class="mobile-menu__link">Проекти</a>
 					</li>
 
 					<li class="mobile-menu__item">
-						<a href="" class="mobile-menu__link">Гарантии</a>
+						<a href="" class="mobile-menu__link">Гарантії</a>
 					</li>
 
 					<li class="mobile-menu__item">
-						<a href="" class="mobile-menu__link">Отзывы</a>
+						<a href="" class="mobile-menu__link">Відгуки</a>
 					</li>
 
 					<li class="mobile-menu__item">
-						<a href="" class="mobile-menu__link">Контакты</a>
+						<a href="" class="mobile-menu__link">Контакти</a>
 					</li>
 				</ul>
 
 				<!-- Contacts -->
 				<ul class="mobile-contacts" data-contacts>
 					<li class="mobile-contacts__item">
-						<a href="" class="mobile-contacts__link">Больше контактов...</a>
+						<a href="" class="mobile-contacts__link">Більше інформації...</a>
 					</li>
 
 					<li class="mobile-contacts__item">
@@ -190,11 +190,11 @@
 			<section class="hero">
 				<div class="hero__content">
 					<h1 class="hero__tagline">
-						Постройте дом <br />
-						своей мечты
+						Побудуйте будинок <br />
+						своєї мрії
 					</h1>
-					<p class="hero__label">от 7 000 грн/м<sup>2</sup></p>
-					<button class="hero__button" type="button" onclick="openFormApp()">Подать заявку</button>
+					<p class="hero__label">від 7 000 грн/м<sup>2</sup></p>
+					<button class="hero__button" type="button" onclick="openFormApp()">Подати заявку</button>
 				</div>
 			</section>
 		</main>

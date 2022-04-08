@@ -699,7 +699,7 @@ a {
 
 .hero__tagline {
   color: #fff;
-  font-size: 36px;
+  font-size: 30px;
   text-align: center;
   background-color: rgba(247, 90, 0, 0.8);
   padding: 10px 20px;
@@ -709,7 +709,7 @@ a {
 
 .hero__label {
   color: #fff;
-  font-size: 30px;
+  font-size: 24px;
   text-align: center;
   background-color: rgba(247, 119, 0, 0.8);
   padding: 4px 20px;
