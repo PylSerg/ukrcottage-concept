@@ -1,9 +1,41 @@
-.about-us {
+// Common styles
+.about-us,
+.advantages,
+.answers {
 	padding: 10px;
+}
+
+.about-us__title,
+.advantages__title,
+.answers__title {
+}
+
+// About us
+.about-us {
 }
 
 .about-us__title {
 }
 
 .about-us__description {
+}
+
+// Advantagers
+.advantages {
+}
+
+.advantages__title {
+}
+
+.advantages__list {
+}
+
+.advantages__item {
+}
+
+// Answers
+.answers {
+}
+
+.answers__title {
 }

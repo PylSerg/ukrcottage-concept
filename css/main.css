@@ -691,7 +691,9 @@ a {
   background-color: #ff1e00;
 }
 
-.about-us {
+.about-us,
+.advantages,
+.answers {
   padding: 10px;
 }
 
