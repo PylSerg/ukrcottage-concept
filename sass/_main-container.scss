@@ -39,3 +39,28 @@
 
 .answers__title {
 }
+
+.answers__video-container {
+	display: flex;
+	justify-content: center;
+}
+
+.answers__video {
+	// width: 256px;
+	// height: 144px;
+
+	@media screen and (min-width: 308px) {
+		width: 288px;
+		height: 162px;
+	}
+
+	@media screen and (min-width: 356px) {
+		width: 336px;
+		height: 189px;
+	}
+
+	@media screen and (min-width: 388px) {
+		width: 368px;
+		height: 207px;
+	}
+}
