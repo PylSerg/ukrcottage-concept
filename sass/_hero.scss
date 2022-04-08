@@ -1,0 +1,108 @@
+.hero {
+	width: 100%;
+	height: 400px;
+
+	padding: 0;
+	margin: 0;
+
+	background-image: url(../images/gallery/hero-mobile-760.jpg);
+	background-size: contain;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.hero__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(124, 56, 0, 0.5);
+}
+
+.hero__tagline {
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+
+	background-color: rgba(247, 90, 0, 0.8);
+
+	padding: 10px 20px;
+	margin: 0;
+	margin-bottom: 10px;
+
+	transform: translateX(-100vw);
+
+	animation: slide-right 500ms linear 500ms;
+	animation-fill-mode: forwards;
+}
+
+.hero__label {
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+
+	background-color: rgba(247, 119, 0, 0.8);
+
+	padding: 4px 20px;
+	margin: 0;
+	margin-bottom: 20px;
+
+	transform: translateX(-100vw);
+
+	animation: slide-left 500ms linear 500ms;
+	animation-fill-mode: forwards;
+}
+
+.hero__button {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+
+	padding: 10px 20px;
+
+	background-color: #ff5100;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px 1px #333;
+
+	cursor: pointer;
+
+	opacity: 0;
+
+	animation: opacity-button 500ms linear 1000ms;
+	animation-fill-mode: forwards;
+}
+
+// Animation
+@keyframes slide-right {
+	0% {
+		transform: translateX(-100vw);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slide-left {
+	0% {
+		transform: translateX(100vw);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes opacity-button {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
