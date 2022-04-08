@@ -9,7 +9,7 @@ body {
   background-color: #fff;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  padding-top: 40px 0 0 0;
+  padding-top: 40px;
   margin: 0;
 }
 
@@ -674,8 +674,54 @@ a {
 }
 
 .hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 100%;
   background-color: rgba(124, 56, 0, 0.5);
+}
+
+.hero__tagline {
+  color: #fff;
+  font-size: 36px;
+  text-align: center;
+  background-color: rgba(247, 90, 0, 0.8);
+  padding: 10px 20px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.hero__label {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  background-color: rgba(247, 119, 0, 0.8);
+  padding: 4px 20px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.hero__button {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px;
+  background-color: #ff5100;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 5px 1px #333;
+          box-shadow: 1px 1px 5px 1px #333;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
