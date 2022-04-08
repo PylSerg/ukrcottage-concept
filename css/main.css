@@ -727,6 +727,27 @@ a {
   }
 }
 
+@media screen and (min-width: 436px) {
+  .answers__video {
+    width: 416px;
+    height: 234px;
+  }
+}
+
+@media screen and (min-width: 484px) {
+  .answers__video {
+    width: 464px;
+    height: 261px;
+  }
+}
+
+@media screen and (min-width: 532px) {
+  .answers__video {
+    width: 512px;
+    height: 288px;
+  }
+}
+
 .hero {
   width: 100%;
   height: 400px;
