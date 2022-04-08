@@ -19,6 +19,12 @@ body {
   }
 }
 
+@media screen and (max-width: 765px) {
+  body {
+    padding-bottom: 60px;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -683,6 +689,10 @@ a {
 
 .form-button button:hover {
   background-color: #ff1e00;
+}
+
+.about-us {
+  padding: 10px;
 }
 
 .hero {
