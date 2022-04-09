@@ -116,9 +116,19 @@
 }
 
 .submit__title {
+	text-align: center;
 }
 
 .submit__description {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.submit__button-section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
 }
 
 // Modifier for buttons
@@ -126,4 +136,7 @@
 .callback {
 	font-size: 14px;
 	padding: 10px;
+
+	width: 45%;
+	max-width: 200px;
 }

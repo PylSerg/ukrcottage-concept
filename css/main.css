@@ -828,10 +828,35 @@ a {
   background-color: #f3f3f3;
 }
 
+.submit__title {
+  text-align: center;
+}
+
+.submit__description {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.submit__button-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .application,
 .callback {
   font-size: 14px;
   padding: 10px;
+  width: 45%;
+  max-width: 200px;
 }
 
 .hero {
