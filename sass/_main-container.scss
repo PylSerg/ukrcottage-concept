@@ -3,7 +3,7 @@
 .advantages,
 .answers,
 .submit {
-	padding: 20px 10px;
+	padding: 30px 10px 50px 10px;
 }
 
 .about-us__title,
@@ -30,7 +30,7 @@
 
 // About us
 .about-us {
-	background-color: #fff;
+	background-color: #f3f3f3;
 	padding-top: 30px;
 }
 
@@ -40,7 +40,7 @@
 
 // Advantagers
 .advantages {
-	background-color: #f3f3f3;
+	background-color: #fff;
 }
 
 .advantages__title {
@@ -52,14 +52,75 @@
 	flex-direction: column;
 	align-items: center;
 
+	width: 100%;
+
 	margin: 0;
 	padding: 0;
 }
 
 .advantages__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	color: #555555;
+	font-size: 20px;
+	text-align: center;
+
+	width: 70%;
+	max-width: 300px;
+
+	padding: 10px;
+
+	background-color: #cfcfcf;
+	box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+.advantages__item:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.advantages__img {
+	display: block;
+	margin: 0 10px 20px 10px;
+}
+
+// Submit applcation
+.submit {
+	background-color: #f3f3f3;
+}
+
+.submit__title {
+	text-align: center;
+}
+
+.submit__description {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.submit__button-section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+// Modifier for buttons
+.application,
+.callback {
+	font-size: 14px;
+	padding: 10px;
+
+	width: 45%;
+	max-width: 200px;
 }
 
 // Answers
+.answers {
+	background-color: #fff;
+}
+
 .answers__video-container {
 	display: flex;
 	justify-content: center;
@@ -101,34 +162,4 @@
 		width: 512px;
 		height: 288px;
 	}
-}
-
-.submit {
-	background-color: #f3f3f3;
-}
-
-.submit__title {
-	text-align: center;
-}
-
-.submit__description {
-	text-align: center;
-	margin-bottom: 20px;
-}
-
-.submit__button-section {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-}
-
-// Modifier for buttons
-.application,
-.callback {
-	font-size: 14px;
-	padding: 10px;
-
-	width: 45%;
-	max-width: 200px;
 }
