@@ -10,12 +10,15 @@ function closeFormApp() {
 }
 
 function toTop() {
+    document.querySelector("html").style.scrollBehavior = "auto";
+
     let t;
     let top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
-    if(top > 0) {
+    if (top > 0) {
         window.scrollBy(0,-100);
         t = setTimeout('toTop()',20);
     } else clearTimeout(t);
+    document.querySelector("html").style.scrollBehavior = "smooth";
     return false;
 }
 

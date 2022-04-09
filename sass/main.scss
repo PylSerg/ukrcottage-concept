@@ -1,5 +1,9 @@
 @import "root";
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	list-style: none;
 	background-color: #fff;
