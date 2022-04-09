@@ -21,6 +21,36 @@ a {
 	text-decoration: none;
 }
 
+.button-primary {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+
+	padding: 10px 20px;
+
+	background-color: var(--main-color);
+	border: 2px solid var(--main-color);
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px 1px #333;
+
+	cursor: pointer;
+}
+
+.button-secondary {
+	color: var(--main-color);
+	font-size: 20px;
+	font-weight: 700;
+
+	padding: 10px 20px;
+
+	background-color: #fff;
+	border: 2px solid var(--main-color);
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px 1px #333;
+
+	cursor: pointer;
+}
+
 @import "header";
 @import "nav-mobile";
 @import "form-application";
