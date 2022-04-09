@@ -118,8 +118,9 @@
 .submit__description {
 }
 
-.submit__application {
-}
-
-.submit__callback {
+// Modifier for buttons
+.application,
+.callback {
+	font-size: 14px;
+	padding: 10px;
 }

@@ -264,6 +264,7 @@ a {
   padding: 0;
   border: 0;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .nav-mobile__icon {
@@ -821,6 +822,12 @@ a {
   background-color: #f3f3f3;
 }
 
+.application,
+.callback {
+  font-size: 14px;
+  padding: 10px;
+}
+
 .hero {
   width: 100%;
   height: 100vh;
@@ -890,7 +897,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.button-primary {
+.hero__button {
   opacity: 0;
   -webkit-animation: opacity-button 500ms linear 1000ms;
           animation: opacity-button 500ms linear 1000ms;
