@@ -10,11 +10,11 @@
 	height: 40px;
 
 	background-color: var(--main-color);
-	z-index: 99;
+	z-index: 999;
 
-	// @media screen and (max-width: 767px) {
-	// 	position: absolute;
-	// }
+	@media screen and (min-width: 1366px) {
+		position: fixed;
+	}
 
 	@media screen and (min-width: 1920px) {
 		height: 60px;
@@ -90,7 +90,7 @@
 
 .logo:hover .logo__title,
 .logo:focus .logo__title {
-	transform: translate(100%, 0);
+	transform: translate(80%, 0);
 	opacity: 1;
 }
 
