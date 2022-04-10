@@ -797,7 +797,10 @@ a {
   padding: 0;
 }
 
-.advantages__item {
+.advantages__price,
+.advantages__intermediary,
+.advantages__estimate,
+.advantages__steps {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -814,18 +817,41 @@ a {
   width: 70%;
   max-width: 300px;
   padding: 10px;
+  margin-bottom: 20px;
   background-color: #cfcfcf;
   -webkit-box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.3);
 }
 
-.advantages__item:not(:last-child) {
-  margin-bottom: 20px;
+.advantages__steps {
+  margin-bottom: 0;
 }
 
-.advantages__img {
-  display: block;
-  margin: 0 10px 20px 10px;
+.advantages__price::before,
+.advantages__intermediary::before,
+.advantages__estimate::before,
+.advantages__steps::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+  background-size: contain;
+}
+
+.advantages__price::before {
+  background-image: url(../images/png/price.png);
+}
+
+.advantages__intermediary::before {
+  background-image: url(../images/png/intermediary.png);
+}
+
+.advantages__estimate::before {
+  background-image: url(../images/png/estimate.png);
+}
+
+.advantages__steps::before {
+  background-image: url(../images/png/steps.png);
 }
 
 .submit {
