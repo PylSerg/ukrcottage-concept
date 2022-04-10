@@ -102,6 +102,9 @@
 }
 
 .open-form__app {
+	display: flex;
+	align-items: center;
+
 	color: #fff;
 
 	height: 100%;
@@ -113,4 +116,16 @@
 	background-color: var(--main-color);
 
 	cursor: pointer;
+}
+
+.open-form__app::before {
+	content: "";
+
+	background-image: url("../images/png/calculator.png");
+	background-size: contain;
+
+	width: 20px;
+	height: 20px;
+
+	margin-right: 10px;
 }

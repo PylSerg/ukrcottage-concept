@@ -192,6 +192,12 @@ a {
 }
 
 .open-form__app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -199,6 +205,15 @@ a {
   border: none;
   background-color: var(--main-color);
   cursor: pointer;
+}
+
+.open-form__app::before {
+  content: "";
+  background-image: url("../images/png/calculator.png");
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 
 .nav-mobile {
