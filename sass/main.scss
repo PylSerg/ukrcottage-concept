@@ -25,10 +25,15 @@ a {
 	text-decoration: none;
 }
 
+button {
+	font-family: "Montserrat", sans-serif;
+}
+
 .button-primary {
 	color: #fff;
 	font-size: 16px;
 	font-weight: 700;
+	font-family: "Montserrat", sans-serif;
 
 	padding: 10px 20px;
 
@@ -44,6 +49,7 @@ a {
 	color: var(--main-color);
 	font-size: 16px;
 	font-weight: 700;
+	font-family: "Montserrat", sans-serif;
 
 	padding: 10px 20px;
 
@@ -56,6 +62,7 @@ a {
 }
 
 @import "header";
+@import "nav-desktop";
 @import "nav-mobile";
 @import "form-application";
 @import "main-container";

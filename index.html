@@ -13,7 +13,7 @@
 
 	<body>
 		<!-- Header -->
-		<header class="page-header">
+		<header class="header">
 			<div class="logo">
 				<a class="logo__link" href="/">
 					<p class="logo__title">Головна</p>
@@ -24,6 +24,32 @@
 			<div class="open-form">
 				<button class="open-form__app" onclick="openFormApp()">Прорахувати кошторис</button>
 			</div>
+
+			<div class="search-desktop">
+				<p class="search-desktop__label" data-open-search>Пошук</p>
+				<div class="search-desktop__search-block" data-search-block>
+					<input type="text" class="search-desktop__field" placeholder="Я шукаю..." />
+					<svg class="search-desktop__close" data-close-search><use href="./images/svg/icon-moon-pack.svg#cross"></use></svg>
+				</div>
+			</div>
+
+			<!-- Desktop/tablet nav-bar -->
+			<nav class="nav-desktop">
+				<ul class="nav-desktop__list">
+					<li class="nav-desktop__item">
+						<a href="" class="nav-desktop__link">Проекти</a>
+					</li>
+					<li class="nav-desktop__item">
+						<a href="" class="nav-desktop__link">Гарантії</a>
+					</li>
+					<li class="nav-desktop__item">
+						<a href="" class="nav-desktop__link">Відгуки</a>
+					</li>
+					<li class="nav-desktop__item">
+						<a href="" class="nav-desktop__link">Контакти</a>
+					</li>
+				</ul>
+			</nav>
 
 			<!-- Mobile nav-bar -->
 			<nav class="nav-mobile">
@@ -122,9 +148,6 @@
 					</li>
 				</ul>
 			</nav>
-
-			<!-- Desktop/tablet nav-bar -->
-			<nav class="nav-desktop"></nav>
 		</header>
 
 		<!-- Main content -->

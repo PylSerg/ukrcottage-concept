@@ -84,3 +84,18 @@ const searchList = document.querySelector("[data-search]");
         document.querySelector(".search__field").value = "";
     })
 })();
+
+(() => {
+    const openSearchForm = document.querySelector("[data-open-search]");
+    const closeSearchForm = document.querySelector("[data-close-search]");
+
+    const searchForm = document.querySelector("[data-search-block]");
+
+    openSearchForm.addEventListener("click", () => {
+        searchForm.classList.add("search-desktop__search-block--visible");
+    })
+
+    closeSearchForm.addEventListener("click", () => {
+        searchForm.classList.remove("search-desktop__search-block--visible");
+    })
+})();
