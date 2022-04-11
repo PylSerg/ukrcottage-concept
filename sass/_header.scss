@@ -118,6 +118,10 @@
 	cursor: pointer;
 }
 
+.open-form__app:hover {
+	background-color: #ff5c00;
+}
+
 .open-form__app::before {
 	content: "";
 

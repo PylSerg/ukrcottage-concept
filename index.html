@@ -25,63 +25,6 @@
 				<button class="open-form__app" onclick="openFormApp()">Прорахувати кошторис</button>
 			</div>
 
-			<!-- Application Form -->
-			<div class="form-application-container">
-				<form class="form-application">
-					<svg class="form-application__close" onclick="closeFormApp()"><use href="./images/svg/icon-moon-pack.svg#cross"></use></svg>
-
-					<h3 class="form-application__title">Заявка на прорахунок кошторису</h3>
-
-					<label class="form-application__field">
-						<input class="form-application__input" type="text" name="name" placeholder=" " required />
-						<span class="form-application__label">Ім'я<span class="form-application__mark">*</span></span>
-						<span class="form-application__icon form-application__icon-name"></span>
-					</label>
-
-					<label class="form-application__field">
-						<input class="form-application__input" type="tel" name="telephone" placeholder=" " required />
-						<span class="form-application__label">Телефон<span class="form-application__mark">*</span></span>
-						<span class="form-application__icon form-application__icon-tel"></span>
-					</label>
-
-					<label class="form-application__field">
-						<input class="form-application__input" type="email" name="email" placeholder=" " />
-						<span class="form-application__label">Email</span>
-						<span class="form-application__icon form-application__icon-mail"></span>
-					</label>
-
-					<label class="form-application__field"
-						><span class="form-application__description">Опис</span>
-						<textarea
-							class="form-application__textarea"
-							name="description"
-							rows="6"
-							placeholder="Чим точнішими будуть надані матеріали – тим точнішими будуть результати прорахунку."
-						></textarea>
-					</label>
-
-					<label class="form-application__file">
-						<span>
-							Ви можете завантажити файл pdf, img... &nbsp;
-							<input class="form-application__load-file" type="file" name="file" />
-						</span>
-					</label>
-
-					<label class="form-application__policy">
-						<input class="form-application__checkbox" type="checkbox" name="policy" required />
-						<span class="form-application__icon-check"></span>
-						<span
-							>Я погоджуюсь з умовами <a class="form-application__link" href="https://ukrcottage.com.ua/politika-konfidenczialnosti" target="_blank">політики конфіденційності</a
-							><span class="form-application__mark">*</span></span
-						>
-					</label>
-
-					<div class="form-application__button-submit-container">
-						<button class="button-primary" type="submit">Відправити</button>
-					</div>
-				</form>
-			</div>
-
 			<!-- Mobile nav-bar -->
 			<nav class="nav-mobile">
 				<ul class="nav-mobile__tools">
@@ -180,7 +123,7 @@
 				</ul>
 			</nav>
 
-			<!-- Desktop nav-bar -->
+			<!-- Desktop/tablet nav-bar -->
 			<nav class="nav-desktop"></nav>
 		</header>
 
@@ -259,6 +202,63 @@
 				</div>
 			</section>
 		</main>
+
+		<!-- Application Form -->
+		<div class="form-application-container">
+			<form class="form-application">
+				<svg class="form-application__close" onclick="closeFormApp()"><use href="./images/svg/icon-moon-pack.svg#cross"></use></svg>
+
+				<h3 class="form-application__title">Заявка на прорахунок кошторису</h3>
+
+				<label class="form-application__field">
+					<input class="form-application__input" type="text" name="name" placeholder=" " required />
+					<span class="form-application__label">Ім'я<span class="form-application__mark">*</span></span>
+					<span class="form-application__icon form-application__icon-name"></span>
+				</label>
+
+				<label class="form-application__field">
+					<input class="form-application__input" type="tel" name="telephone" placeholder=" " required />
+					<span class="form-application__label">Телефон<span class="form-application__mark">*</span></span>
+					<span class="form-application__icon form-application__icon-tel"></span>
+				</label>
+
+				<label class="form-application__field">
+					<input class="form-application__input" type="email" name="email" placeholder=" " />
+					<span class="form-application__label">Email</span>
+					<span class="form-application__icon form-application__icon-mail"></span>
+				</label>
+
+				<label class="form-application__field"
+					><span class="form-application__description">Опис</span>
+					<textarea
+						class="form-application__textarea"
+						name="description"
+						rows="6"
+						placeholder="Чим точнішими будуть надані матеріали – тим точнішими будуть результати прорахунку."
+					></textarea>
+				</label>
+
+				<label class="form-application__file">
+					<span>
+						Ви можете завантажити файл pdf, img... &nbsp;
+						<input class="form-application__load-file" type="file" name="file" />
+					</span>
+				</label>
+
+				<label class="form-application__policy">
+					<input class="form-application__checkbox" type="checkbox" name="policy" required />
+					<span class="form-application__icon-check"></span>
+					<span
+						>Я погоджуюсь з умовами <a class="form-application__link" href="https://ukrcottage.com.ua/politika-konfidenczialnosti" target="_blank">політики конфіденційності</a
+						><span class="form-application__mark">*</span></span
+					>
+				</label>
+
+				<div class="form-application__button-submit-container">
+					<button class="button-primary" type="submit">Відправити</button>
+				</div>
+			</form>
+		</div>
 
 		<footer class="footer">
 			<p class="footer__copyright">UKRCOTTAGE &copy; 2009 - 2022</p>
