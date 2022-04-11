@@ -2,6 +2,7 @@
   --border-line: 1px solid #ccc;
   --transorm-animation: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --main-color: #ff7f27;
+  --secondary-color: #ff5c00;
 }
 
 html {
@@ -208,7 +209,7 @@ a {
 }
 
 .open-form__app:hover {
-  background-color: #ff5c00;
+  background-color: var(--secondary-color);
 }
 
 .open-form__app::before {
@@ -445,12 +446,11 @@ a {
 
 .form-application-container {
   position: fixed;
-  top: 40px;
+  top: 0;
   left: 0;
   z-index: 999;
   width: 100vw;
   height: 100vh;
-  margin-top: -40px;
   opacity: 0;
   pointer-events: none;
   -webkit-transform: scale(1.5);
@@ -462,12 +462,6 @@ a {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 1366px) {
-  .form-application-container {
-    top: 60px;
-  }
-}
-
 .form-application-container--visible {
   opacity: 1;
   pointer-events: all;
@@ -477,22 +471,25 @@ a {
 
 .form-application {
   position: absolute;
-  top: 16%;
+  top: 20%;
   left: 50%;
-  -webkit-transform: translate(-50%, -15%);
-          transform: translate(-50%, -15%);
+  -webkit-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%);
   margin: 0;
   padding: 10px;
   background-color: #fff;
   border-radius: 15px;
+  max-width: 450px;
   width: 80vw;
   height: auto;
 }
 
-@media screen and (min-width: 768px) and (max-height: 575px) {
+@media screen and (min-width: 768px) {
   .form-application {
-    top: 35%;
-    height: 170%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
