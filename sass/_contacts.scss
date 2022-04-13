@@ -1,0 +1,85 @@
+.contacts {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	width: auto;
+	height: 100%;
+
+	padding: 0;
+	margin: 0;
+	margin-right: 10px;
+
+	list-style: none;
+
+	transform: scaleX(1);
+	transform-origin: right;
+	transition: all 250ms linear;
+
+	@media screen and (max-width: 1365px) {
+		width: 0;
+		transform: scaleX(0);
+		transition: all 250ms linear;
+	}
+}
+
+.contacts__phone-mobile,
+.contacts__phone-landline {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 100%;
+
+	padding: 0 10px;
+
+	transition: all 250ms linear;
+}
+
+.contacts__phone-mobile:hover,
+.contacts__phone-landline:hover,
+.contacts__phone-mobile:focus,
+.contacts__phone-landline:focus {
+	background-color: var(--secondary-color);
+}
+
+.contacts__phone-mobile {
+	margin-right: 10px;
+}
+
+.contacts__phone-mobile::before {
+	content: "";
+
+	background-image: url(../images/png/mobilephone.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	width: 16px;
+	height: 16px;
+
+	margin-right: 5px;
+}
+
+.contacts__phone-landline::before {
+	content: "";
+
+	background-image: url(../images/png/tellphone.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	width: 16px;
+	height: 16px;
+
+	margin-right: 5px;
+}
+
+.contacts__link {
+	display: flex;
+	align-items: center;
+
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+
+	height: 100%;
+}
