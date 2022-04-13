@@ -100,7 +100,7 @@ button {
           align-items: center;
   height: 100%;
   margin-left: -180px;
-  margin-right: 50px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 1365px) {
@@ -209,11 +209,6 @@ button {
   }
 }
 
-.search-desktop__button:hover,
-.search-desktop__button:focus {
-  background-color: var(--secondary-color);
-}
-
 .search-desktop__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -228,6 +223,8 @@ button {
   background-color: var(--main-color);
   border: none;
   cursor: pointer;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
 }
 
 @media screen and (min-width: 1024px) {
@@ -240,9 +237,15 @@ button {
   content: "";
   background-image: url(../images/svg/search.svg);
   background-size: contain;
+  background-repeat: no-repeat;
   width: 14px;
   height: 14px;
   margin-right: 5px;
+}
+
+.search-desktop__button:hover,
+.search-desktop__button:focus {
+  background-color: var(--secondary-color);
 }
 
 .search-desktop__search-block {
@@ -261,10 +264,8 @@ button {
           transform: scaleX(0);
   -webkit-transform-origin: 0px;
           transform-origin: 0px;
-  -webkit-transition: -webkit-transform 100ms linear;
-  transition: -webkit-transform 100ms linear;
-  transition: transform 100ms linear;
-  transition: transform 100ms linear, -webkit-transform 100ms linear;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 @media screen and (min-width: 1024px) {
@@ -276,6 +277,9 @@ button {
 }
 
 .search-desktop__field {
+  color: #333;
+  font-size: 14px;
+  font-style: italic;
   width: 220px;
   height: 60%;
   padding: 0 10px;
@@ -341,6 +345,14 @@ button {
   border: none;
   background-color: var(--main-color);
   cursor: pointer;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+
+@media screen and (min-width: 1366px) {
+  .open-form__app {
+    font-size: 14px;
+  }
 }
 
 .open-form__app:hover,
@@ -352,9 +364,106 @@ button {
   content: "";
   background-image: url(../images/png/calculator.png);
   background-size: contain;
+  background-repeat: no-repeat;
   width: 14px;
   height: 14px;
   margin-right: 5px;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+  list-style: none;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+
+@media screen and (max-width: 1365px) {
+  .contacts {
+    width: 0;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: all 250ms linear;
+    transition: all 250ms linear;
+  }
+}
+
+.contacts__phone-mobile,
+.contacts__phone-landline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  padding: 0 10px;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+
+.contacts__phone-mobile:hover,
+.contacts__phone-landline:hover,
+.contacts__phone-mobile:focus,
+.contacts__phone-landline:focus {
+  background-color: var(--secondary-color);
+}
+
+.contacts__phone-mobile {
+  margin-right: 10px;
+}
+
+.contacts__phone-mobile::before {
+  content: "";
+  background-image: url(../images/png/mobilephone.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.contacts__phone-landline::before {
+  content: "";
+  background-image: url(../images/png/tellphone.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  height: 100%;
 }
 
 .nav-desktop {
@@ -379,7 +488,6 @@ button {
   height: 100%;
   padding: 0;
   margin: 0;
-  margin-right: 10px;
   list-style: none;
 }
 
@@ -402,6 +510,16 @@ button {
   font-size: 13px;
   height: 100%;
   padding: 0 10px;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+
+@media screen and (min-width: 1366px) {
+  .nav-desktop__link {
+    font-size: 16px;
+    -webkit-transition: all 250ms linear;
+    transition: all 250ms linear;
+  }
 }
 
 .nav-desktop__link:hover,
