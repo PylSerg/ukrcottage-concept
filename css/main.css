@@ -1297,10 +1297,11 @@ button {
 
 .hero__tagline {
   color: #fff;
-  font-size: 30px;
+  font-size: 26px;
   text-align: center;
   background-color: rgba(247, 90, 0, 0.8);
   border-radius: 5px;
+  max-width: 80vw;
   padding: 10px 20px;
   margin: 0;
   margin-bottom: 10px;
