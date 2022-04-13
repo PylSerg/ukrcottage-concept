@@ -21,16 +21,18 @@
 				</a>
 			</div>
 
-			<div class="open-form">
-				<button class="open-form__app" onclick="openFormApp()">Прорахувати кошторис</button>
-			</div>
-
+			<!-- Search desktop -->
 			<div class="search-desktop">
-				<p class="search-desktop__label" data-open-search>Пошук</p>
+				<button class="search-desktop__button" type="button" data-open-search>Пошук</button>
 				<div class="search-desktop__search-block" data-search-block>
 					<input type="text" class="search-desktop__field" placeholder="Я шукаю..." />
 					<svg class="search-desktop__close" data-close-search><use href="./images/svg/icon-moon-pack.svg#cross"></use></svg>
 				</div>
+			</div>
+
+			<!-- Application button -->
+			<div class="open-form">
+				<button class="open-form__app" type="button" onclick="openFormApp()">Прорахувати кошторис</button>
 			</div>
 
 			<!-- Desktop/tablet nav-bar -->

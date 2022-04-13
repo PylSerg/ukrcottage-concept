@@ -40,3 +40,8 @@
 
 	padding: 0 10px;
 }
+
+.nav-desktop__link:hover,
+.nav-desktop__link:focus {
+	background-color: var(--secondary-color);
+}
