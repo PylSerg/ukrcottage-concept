@@ -1492,6 +1492,21 @@ button {
   }
 }
 
+.to-top {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  opacity: 0.5;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/png/icon_top.png);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+
 .footer {
   position: relative;
   left: 0;
