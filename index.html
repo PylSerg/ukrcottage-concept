@@ -68,7 +68,21 @@
 			<button class="to-top" type="button" onclick="toTop()" title="На гору"></button>
 
 			<!-- Call -->
-			<button class="call" type="button"></button>
+			<div class="call">
+				<ul class="call__list" data-call-menu>
+					<li class="call__item">
+						<a class="call__link" href="">Замовити дзвінок</a>
+					</li>
+					<li class="call__item">
+						<a href="tel:+380442992056" class="call__link">(044) 299 20 56</a>
+					</li>
+					<li class="call__item">
+						<a href="tel:+380672121864" class="call__link">(067) 212 18 64</a>
+					</li>
+				</ul>
+
+				<button class="call__button" type="button" data-call-visible title="Замовити зворотній дзвінок"></button>
+			</div>
 
 			<!-- Mobile nav-bar -->
 			<nav class="nav-mobile">

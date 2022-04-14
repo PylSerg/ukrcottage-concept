@@ -1,7 +1,7 @@
 .to-top {
 	position: fixed;
-	left: 10px;
-	bottom: 10px;
+	left: 20px;
+	bottom: 20px;
 
 	opacity: 0.5;
 
@@ -16,4 +16,8 @@
 	cursor: pointer;
 
 	transition: all 150ms linear;
+
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
 }

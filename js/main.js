@@ -75,8 +75,10 @@ const searchList = document.querySelector("[data-search]");
     }); 
 })();
 
+
+const searchStart = document.querySelector("[data-search-start]");
+
 (() => {
-    const searchStart = document.querySelector("[data-search-start]");
 
     searchStart.addEventListener("click", () => {
         searchBtn.classList.remove("active-button");
@@ -85,11 +87,13 @@ const searchList = document.querySelector("[data-search]");
     })
 })();
 
-(() => {
-    const openSearchForm = document.querySelector("[data-open-search]");
-    const closeSearchForm = document.querySelector("[data-close-search]");
 
-    const searchForm = document.querySelector("[data-search-block]");
+const openSearchForm = document.querySelector("[data-open-search]");
+const closeSearchForm = document.querySelector("[data-close-search]");
+
+const searchForm = document.querySelector("[data-search-block]");
+    
+(() => {
 
     openSearchForm.addEventListener("click", () => {
         searchForm.classList.add("search-desktop__search-block--visible");
@@ -97,5 +101,17 @@ const searchList = document.querySelector("[data-search]");
 
     closeSearchForm.addEventListener("click", () => {
         searchForm.classList.remove("search-desktop__search-block--visible");
+    })
+})();
+
+
+const showCallMenu = document.querySelector("[data-call-visible]");
+const callMenu = document.querySelector("[data-call-menu]");
+    
+(() => {
+
+    showCallMenu.addEventListener("click", () => {
+        showCallMenu.classList.toggle("call__button--visible");
+        callMenu.classList.toggle("call__list--visible");
     })
 })();

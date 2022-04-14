@@ -1494,8 +1494,8 @@ button {
 
 .to-top {
   position: fixed;
-  left: 10px;
-  bottom: 10px;
+  left: 20px;
+  bottom: 20px;
   opacity: 0.5;
   width: 40px;
   height: 40px;
@@ -1505,6 +1505,145 @@ button {
   cursor: pointer;
   -webkit-transition: all 150ms linear;
   transition: all 150ms linear;
+}
+
+@media screen and (max-width: 767px) {
+  .to-top {
+    display: none;
+  }
+}
+
+.call {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+@media screen and (max-width: 767px) {
+  .call {
+    display: none;
+  }
+}
+
+.call__list {
+  width: 220px;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  -webkit-box-shadow: 1px -1px 10px #777;
+          box-shadow: 1px -1px 10px #777;
+  margin: 0;
+  padding: 0 10px;
+  z-index: 997;
+  list-style: none;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+
+.call__list--visible {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transition: all 150ms linear 250ms;
+  transition: all 150ms linear 250ms;
+}
+
+.call__item {
+  padding: 10px 0;
+}
+
+.call__item:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.call__link {
+  display: block;
+  text-align: center;
+  color: #d64f00;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.call__link:hover {
+  color: #fff;
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+
+.call__button {
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/svg/phone.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  background-position: center;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  z-index: 999;
+  -webkit-transition: width 150ms linear 150ms, border-radius 50ms linear 350ms;
+  transition: width 150ms linear 150ms, border-radius 50ms linear 350ms;
+  -webkit-animation: call-button 1000ms linear 500ms;
+          animation: call-button 1000ms linear 500ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.call__button--visible {
+  width: 240px;
+  border-radius: 0 0 10px 10px;
+  -webkit-box-shadow: 1px 1px 10px #777;
+          box-shadow: 1px 1px 10px #777;
+  -webkit-transition: border-radius 50ms linear, width 150ms linear 50ms;
+  transition: border-radius 50ms linear, width 150ms linear 50ms;
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes call-button {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes call-button {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 
 .footer {
