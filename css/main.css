@@ -1045,6 +1045,7 @@ button {
   background-color: #ff1e00;
 }
 
+.top-projects,
 .about-us,
 .advantages,
 .answers,
@@ -1052,6 +1053,7 @@ button {
   padding: 30px 10px 50px 10px;
 }
 
+.top-projects__title,
 .about-us__title,
 .advantages__title,
 .answers__title,
@@ -1063,12 +1065,22 @@ button {
   padding: 0;
 }
 
-.about-us__description,
+.top-projects__item .about-us__description,
 .advantages__item,
 .submit__description {
   color: #333;
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+.top-projects__title {
+  text-align: center;
+}
+
+.top-projects__list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
