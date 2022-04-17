@@ -2,18 +2,32 @@
 	width: 100%;
 	height: 100vh;
 
-	padding: 0;
-	margin: 0;
-
-	background-image: url(../images/gallery/hero.jpg);
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-
 	@media screen and (max-width: 567px) {
 		height: calc(100vh - 10vh);
 	}
+
+	padding: 0;
+	margin: 0;
+
+	background-image: url(../images/gallery/hero_608.jpg);
+	background-size: cover;
+	background-position: top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+	@media screen and (min-width: 609px) {
+		background-image: url(../images/gallery/hero_960.jpg);
+	}
+
+	@media screen and (min-width: 1024px) {
+		background-image: url(../images/gallery/hero_1366.jpg);
+	}
+
+	@media screen and (min-width: 1366px) {
+		background-image: url(../images/gallery/hero.jpg);
+	}
+
+	transition: all 500ms linear;
 }
 
 .hero__content {
@@ -26,6 +40,7 @@
 	height: 100%;
 
 	background-color: rgba(37, 37, 37, 0.5);
+	background-size: 100%;
 }
 
 .hero__tagline {
@@ -42,10 +57,10 @@
 	margin: 0;
 	margin-bottom: 10px;
 
-	transform: translateX(-100vw);
+	// transform: translateX(-100vw);
 
-	animation: slide-right 500ms linear 500ms;
-	animation-fill-mode: forwards;
+	// animation: slide-right 500ms linear 500ms;
+	// animation-fill-mode: forwards;
 }
 
 .hero__label {
@@ -60,19 +75,19 @@
 	margin: 0;
 	margin-bottom: 20px;
 
-	transform: translateX(-100vw);
+	// transform: translateX(-100vw);
 
-	animation: slide-left 500ms linear 500ms;
-	animation-fill-mode: forwards;
+	// animation: slide-left 500ms linear 500ms;
+	// animation-fill-mode: forwards;
 }
 
 .hero__button {
 	background-color: rgba(255, 255, 255, 0.9);
 
-	opacity: 0;
+	// opacity: 0;
 
-	animation: opacity-button 500ms linear 1000ms;
-	animation-fill-mode: forwards;
+	// animation: opacity-button 500ms linear 1000ms;
+	// animation-fill-mode: forwards;
 }
 
 .swipe {
