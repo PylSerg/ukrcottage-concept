@@ -22,7 +22,7 @@
 .footer__block {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 
 	width: 100%;
 
@@ -46,6 +46,11 @@
 	padding: 0;
 	margin: 0;
 	margin-bottom: 10px;
+}
+
+.footer__contacts,
+.footer__links {
+	margin-right: 100px;
 }
 
 // Contacts
@@ -149,12 +154,17 @@
 
 	padding: 0;
 	margin: 0;
+	margin-left: 10px;
 
 	list-style: none;
 }
 
+.footer__social-item:not(:last-child) {
+	margin-right: 15px;
+}
+
 .footer__social-link {
-	// display: flex;
+	display: flex;
 }
 
 .footer__social-icon {
@@ -162,6 +172,11 @@
 
 	width: 25px;
 	height: 25px;
+}
+
+.footer__social-icon:hover,
+.footer__social-icon:focus {
+	fill: #ff2600;
 }
 
 // Copyright
