@@ -72,6 +72,41 @@ button {
 	color: #fff;
 }
 
+.video {
+	box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.7);
+	margin-bottom: 10px;
+
+	@media screen and (min-width: 308px) {
+		width: 288px;
+		height: 162px;
+	}
+
+	@media screen and (min-width: 356px) {
+		width: 336px;
+		height: 189px;
+	}
+
+	@media screen and (min-width: 388px) {
+		width: 368px;
+		height: 207px;
+	}
+
+	@media screen and (min-width: 436px) {
+		width: 416px;
+		height: 234px;
+	}
+
+	@media screen and (min-width: 484px) {
+		width: 464px;
+		height: 261px;
+	}
+
+	@media screen and (min-width: 532px) {
+		width: 512px;
+		height: 288px;
+	}
+}
+
 @import "header";
 @import "search-desktop";
 @import "contacts";

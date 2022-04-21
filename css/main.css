@@ -77,6 +77,54 @@ button {
   color: #fff;
 }
 
+.video {
+  -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.7);
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 308px) {
+  .video {
+    width: 288px;
+    height: 162px;
+  }
+}
+
+@media screen and (min-width: 356px) {
+  .video {
+    width: 336px;
+    height: 189px;
+  }
+}
+
+@media screen and (min-width: 388px) {
+  .video {
+    width: 368px;
+    height: 207px;
+  }
+}
+
+@media screen and (min-width: 436px) {
+  .video {
+    width: 416px;
+    height: 234px;
+  }
+}
+
+@media screen and (min-width: 484px) {
+  .video {
+    width: 464px;
+    height: 261px;
+  }
+}
+
+@media screen and (min-width: 532px) {
+  .video {
+    width: 512px;
+    height: 288px;
+  }
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -1469,54 +1517,6 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.answers__video {
-  -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.7);
-          box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.7);
-  margin-bottom: 10px;
-}
-
-@media screen and (min-width: 308px) {
-  .answers__video {
-    width: 288px;
-    height: 162px;
-  }
-}
-
-@media screen and (min-width: 356px) {
-  .answers__video {
-    width: 336px;
-    height: 189px;
-  }
-}
-
-@media screen and (min-width: 388px) {
-  .answers__video {
-    width: 368px;
-    height: 207px;
-  }
-}
-
-@media screen and (min-width: 436px) {
-  .answers__video {
-    width: 416px;
-    height: 234px;
-  }
-}
-
-@media screen and (min-width: 484px) {
-  .answers__video {
-    width: 464px;
-    height: 261px;
-  }
-}
-
-@media screen and (min-width: 532px) {
-  .answers__video {
-    width: 512px;
-    height: 288px;
-  }
 }
 
 .hero {
