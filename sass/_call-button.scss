@@ -15,6 +15,11 @@
 }
 
 .call__list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
 	width: 220px;
 
 	background-color: #fff;
@@ -44,6 +49,8 @@
 }
 
 .call__item {
+	width: 100%;
+
 	padding: 10px 0;
 }
 
@@ -51,8 +58,32 @@
 	border-bottom: 1px solid #ccc;
 }
 
-.call__link {
+.call__open-callback {
 	display: block;
+
+	width: 100%;
+
+	text-align: center;
+	color: #d64f00;
+	font-size: 18px;
+
+	padding: 10px;
+
+	border: none;
+	background-color: transparent;
+
+	cursor: pointer;
+}
+
+.call__open-callback:hover {
+	color: #fff;
+	background-color: var(--main-color);
+	border-radius: 5px;
+}
+
+.call__link {
+	display: flex;
+	justify-content: center;
 
 	text-align: center;
 	color: #d64f00;

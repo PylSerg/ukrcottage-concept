@@ -1,28 +1,4 @@
-function openFormApp() {
-    document.querySelector('.form-application-container').classList.add("form-application-container--visible");
-    document.querySelector('body').style.overflow = "hidden";
-}
-
-function closeFormApp() {
-    document.querySelector('.form-application-container').classList.remove('form-application-container--visible');
-        document.querySelector('body').style.overflow = "scroll";
-
-}
-
-function toTop() {
-    document.querySelector("html").style.scrollBehavior = "auto";
-
-    let t;
-    let top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
-    if (top > 0) {
-        window.scrollBy(0,-100);
-        t = setTimeout('toTop()',20);
-    } else clearTimeout(t);
-    document.querySelector("html").style.scrollBehavior = "smooth";
-    return false;
-}
-
-
+// Mobile menu
 const searchBtn = document.querySelector("[data-search-button]");
 const menuBtn = document.querySelector("[data-menu-button]");
 const contactsBtn = document.querySelector("[data-contacts-button]");
@@ -75,7 +51,7 @@ const searchList = document.querySelector("[data-search]");
     }); 
 })();
 
-
+// Mobile search
 const searchStart = document.querySelector("[data-search-start]");
 
 (() => {
@@ -87,7 +63,7 @@ const searchStart = document.querySelector("[data-search-start]");
     })
 })();
 
-
+// Desktop search
 const openSearchForm = document.querySelector("[data-open-search]");
 const closeSearchForm = document.querySelector("[data-close-search]");
 
@@ -104,7 +80,7 @@ const searchForm = document.querySelector("[data-search-block]");
     })
 })();
 
-
+// Call menu
 const showCallMenu = document.querySelector("[data-call-visible]");
 const callMenu = document.querySelector("[data-call-menu]");
     
@@ -115,3 +91,46 @@ const callMenu = document.querySelector("[data-call-menu]");
         callMenu.classList.toggle("call__list--visible");
     })
 })();
+
+// Form Application
+function openFormApp() {
+    document.querySelector('.form-application-container').classList.add("form-application-container--visible");
+    document.querySelector('body').style.overflow = "hidden";
+}
+
+function closeFormApp() {
+    document.querySelector('.form-application-container').classList.remove('form-application-container--visible');
+    document.querySelector('body').style.overflow = "auto";
+
+}
+
+// Form Callback
+function openFormCallBack() {
+    document.querySelector('.form-callback-container').classList.add("form-callback-container--visible");
+    document.querySelector('body').style.overflow = "hidden";
+
+    contactsBtn.classList.remove("active-button");
+    contactsList.classList.remove("visible-contacts");
+    showCallMenu.classList.remove("call__button--visible");
+    callMenu.classList.remove("call__list--visible");
+}
+
+function closeFormCallBack() {
+    document.querySelector('.form-callback-container').classList.remove('form-callback-container--visible');
+    document.querySelector('body').style.overflow = "auto";
+
+}
+
+// To Top
+function toTop() {
+    document.querySelector("html").style.scrollBehavior = "auto";
+
+    let t;
+    let top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+    if (top > 0) {
+        window.scrollBy(0,-100);
+        t = setTimeout('toTop()',20);
+    } else clearTimeout(t);
+    document.querySelector("html").style.scrollBehavior = "smooth";
+    return false;
+}

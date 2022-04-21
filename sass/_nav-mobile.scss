@@ -179,8 +179,18 @@
 	border-bottom: 1px solid #ddd;
 }
 
+.mobile-contacts__button {
+	width: 100%;
+
+	background-color: transparent;
+	border: none;
+
+	cursor: pointer;
+}
+
 .mobile-menu__link,
-.mobile-contacts__link {
+.mobile-contacts__link,
+.mobile-contacts__button {
 	display: block;
 
 	text-align: center;
@@ -191,7 +201,8 @@
 }
 
 .mobile-menu__link:hover,
-.mobile-contacts__link:hover {
+.mobile-contacts__link:hover,
+.mobile-contacts__button:hover {
 	background-color: var(--main-color);
 	color: #fff;
 }
