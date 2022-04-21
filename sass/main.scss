@@ -106,16 +106,20 @@ button {
 	}
 }
 
-@import "header";
-@import "search-desktop";
-@import "contacts";
-@import "nav-desktop";
-@import "nav-mobile";
-@import "form-application";
-@import "form-callback";
-@import "hero";
-@import "main-page";
-@import "reviews";
-@import "to-top-button";
-@import "call-button";
-@import "footer";
+@import "./modal/form-application";
+@import "./modal/form-callback";
+
+@import "./header/header";
+@import "./header/search-desktop";
+@import "./header/contacts";
+@import "./header/nav-desktop";
+@import "./header/nav-mobile";
+@import "./header/to-top-button";
+@import "./header/call-button";
+
+@import "./main-page/hero";
+@import "./main-page/main-page";
+
+@import "./reviews/reviews";
+
+@import "./footer/footer";
