@@ -106,9 +106,11 @@ button {
 	}
 }
 
+// Modals
 @import "./modal/form-application";
 @import "./modal/form-callback";
 
+// Header
 @import "./header/header";
 @import "./header/search-desktop";
 @import "./header/contacts";
@@ -117,9 +119,12 @@ button {
 @import "./header/to-top-button";
 @import "./header/call-button";
 
+// Main page
 @import "./main-page/hero";
 @import "./main-page/main-page";
 
+// Reviews
 @import "./reviews/reviews";
 
+// Footer
 @import "./footer/footer";
