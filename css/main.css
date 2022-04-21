@@ -797,10 +797,10 @@ button {
 
 .form-application {
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -20%);
-          transform: translate(-50%, -20%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   margin: 0;
   padding: 10px;
   background-color: #fff;
@@ -2013,12 +2013,16 @@ button {
 .footer__contacts,
 .footer__links {
   margin-right: 50px;
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
 }
 
 @media screen and (min-width: 1366px) {
   .footer__contacts,
   .footer__links {
     margin-right: 100px;
+    -webkit-transition: all 500ms linear;
+    transition: all 500ms linear;
   }
 }
 

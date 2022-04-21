@@ -52,8 +52,12 @@
 .footer__links {
 	margin-right: 50px;
 
+	transition: all 500ms linear;
+
 	@media screen and (min-width: 1366px) {
 		margin-right: 100px;
+
+		transition: all 500ms linear;
 	}
 }
 
