@@ -1974,6 +1974,7 @@ button {
 @media screen and (max-width: 767px) {
   .footer {
     height: 40px;
+    padding-top: 0;
   }
 }
 
