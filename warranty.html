@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+	<head>
+		<title>Гарантії - UKRCOTTAGE</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link type="image/png" rel="icon" href="./favicon.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="css/main.min.css" />
+	</head>
+
+	<body>
+		<!-- Header -->
+		<header class="header">
+			<!-- Logo -->
+			<div class="logo">
+				<a class="logo__link" href="/">
+					<p class="logo__title">Головна</p>
+					<img class="logo__img" src="./images/png/logo.png" alt="Будівельна компанія УКРКОТЕДЖ" height="30" />
+				</a>
+			</div>
+
+			<!-- Search desktop -->
+			<div class="search-desktop">
+				<button class="search-desktop__button" type="button" data-open-search>Пошук</button>
+				<div class="search-desktop__search-block" data-search-block>
+					<input type="text" class="search-desktop__field" placeholder="Я шукаю..." />
+					<svg class="search-desktop__close" data-close-search><use href="./images/svg/icon-moon-pack.svg#cross"></use></svg>
+				</div>
+			</div>
+
+			<!-- Application button -->
+			<div class="open-form">
+				<button class="open-form__app" type="button" onclick="openFormApp()">Прорахувати кошторис</button>
+			</div>
+
+			<!-- Desktop/tablet nav-bar -->
+			<nav class="nav-desktop">
+				<ul class="nav-desktop__list">
+					<li class="nav-desktop__item">
+						<a href="./projects.html" class="nav-desktop__link">Проекти</a>
+					</li>
+					<li class="nav-desktop__item">
+						<a href="./warranty.html" class="nav-desktop__link">Гарантії</a>
+					</li>
+					<li class="nav-desktop__item">
+						<a href="./reviews.html" class="nav-desktop__link">Відгуки</a>
+					</li>
+					<li class="nav-desktop__item">
+						<a href="./contacts.html" class="nav-desktop__link">Контакти</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- Contacts -->
+			<ul class="contacts">
+				<li class="contacts__phone-mobile">
+					<a class="contacts__link" href="tel:+380672121864">(067) 212 18 64</a>
+				</li>
+				<li class="contacts__phone-landline">
+					<a class="contacts__link" href="tel:+380442992056">(044) 299 20 56</a>
+				</li>
+			</ul>
+
+			<!-- To top -->
+			<button class="to-top" type="button" onclick="toTop()" title="На гору"></button>
+
+			<!-- Call -->
+			<div class="call">
+				<ul class="call__list" data-call-menu>
+					<li class="call__item">
+						<button class="call__open-callback" type="button" onclick="openFormCallBack()">Замовити дзвінок</button>
+					</li>
+					<li class="call__item">
+						<a href="tel:+380442992056" class="call__link">(044) 299 20 56</a>
+					</li>
+					<li class="call__item">
+						<a href="tel:+380672121864" class="call__link">(067) 212 18 64</a>
+					</li>
+				</ul>
+
+				<button class="call__button" type="button" data-call-visible title="Замовити зворотній дзвінок"></button>
+			</div>
+
+			<!-- Mobile nav-bar -->
+			<nav class="nav-mobile">
+				<!-- Tools -->
+				<ul class="nav-mobile__tools">
+					<li class="nav-mobile__item">
+						<button class="nav-mobile__button" type="button" onclick="location.href='index.html'">
+							<svg class="nav-mobile__icon">
+								<use href="./images/svg/icon-moon-pack.svg#home"></use>
+							</svg>
+							<span class="nav-mobile__lable">Головна</span>
+						</button>
+					</li>
+
+					<li class="nav-mobile__item">
+						<button class="nav-mobile__button" type="button" data-search-button>
+							<svg class="nav-mobile__icon">
+								<use href="./images/svg/icon-moon-pack.svg#search"></use>
+							</svg>
+							<span class="nav-mobile__lable">Пошук</span>
+						</button>
+					</li>
+
+					<li class="nav-mobile__item">
+						<button class="nav-mobile__button" type="button" data-menu-button>
+							<svg class="nav-mobile__icon">
+								<use href="./images/svg/icon-moon-pack.svg#menu"></use>
+							</svg>
+							<span class="nav-mobile__lable">Меню</span>
+						</button>
+					</li>
+
+					<li class="nav-mobile__item">
+						<button class="nav-mobile__button" type="button" data-contacts-button>
+							<svg class="nav-mobile__icon">
+								<use href="./images/svg/icon-moon-pack.svg#phone"></use>
+							</svg>
+							<span class="nav-mobile__lable">Контакти</span>
+						</button>
+					</li>
+
+					<li class="nav-mobile__item">
+						<button class="nav-mobile__button" type="button" onclick="toTop()" data-up-button>
+							<svg class="nav-mobile__icon">
+								<use href="./images/svg/icon-moon-pack.svg#circle-up"></use>
+							</svg>
+							<span class="nav-mobile__lable">Нагору</span>
+						</button>
+					</li>
+				</ul>
+
+				<!-- Search -->
+				<div class="search" data-search>
+					<input type="text" class="search__field" placeholder="Я шукаю..." />
+					<button class="search__button" type="button" data-search-start>
+						<svg class="search__icon">
+							<use href="./images/svg/icon-moon-pack.svg#search"></use>
+						</svg>
+					</button>
+				</div>
+
+				<!-- Mobile menu -->
+				<ul class="mobile-menu" data-menu>
+					<li class="mobile-menu__item">
+						<a href="./projects.html" class="mobile-menu__link">Проекти</a>
+					</li>
+
+					<li class="mobile-menu__item">
+						<a href="./warranty.html" class="mobile-menu__link">Гарантії</a>
+					</li>
+
+					<li class="mobile-menu__item">
+						<a href="./reviews.html" class="mobile-menu__link">Відгуки</a>
+					</li>
+
+					<li class="mobile-menu__item">
+						<a href="./contacts.html" class="mobile-menu__link">Контакти</a>
+					</li>
+				</ul>
+
+				<!-- Contacts -->
+				<ul class="mobile-contacts" data-contacts>
+					<li class="mobile-contacts__item">
+						<a href="./contacts.html" class="mobile-contacts__link">Більше інформації...</a>
+					</li>
+
+					<li class="mobile-contacts__item">
+						<button class="mobile-contacts__button" type="button" onclick="openFormCallBack()">Замовити дзвінок</button>
+					</li>
+
+					<li class="mobile-contacts__item">
+						<a href="tel:+380442992056" class="mobile-contacts__link">(044) 299 20 56</a>
+					</li>
+
+					<li class="mobile-contacts__item">
+						<a href="tel:+380672121864" class="mobile-contacts__link">(067) 212 18 64</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main content -->
+		<main></main>
+
+		<!-- Application Form -->
+		<div class="form-application-container">
+			<form class="form-application">
+				<svg class="form-application__close" onclick="closeFormApp()"><use href="./images/svg/icon-moon-pack.svg#cross"></use></svg>
+
+				<h3 class="form-application__title">Заявка на прорахунок кошторису</h3>
+
+				<label class="form-application__field">
+					<input class="form-application__input" type="text" name="name" placeholder=" " required />
+					<span class="form-application__label">Ім'я<span class="form-application__mark">*</span></span>
+					<span class="form-application__icon form-application__icon-name"></span>
+				</label>
+
+				<label class="form-application__field">
+					<input class="form-application__input" type="tel" name="telephone" placeholder=" " required />
+					<span class="form-application__label">Телефон<span class="form-application__mark">*</span></span>
+					<span class="form-application__icon form-application__icon-tel"></span>
+				</label>
+
+				<label class="form-application__field">
+					<input class="form-application__input" type="email" name="email" placeholder=" " />
+					<span class="form-application__label">Email</span>
+					<span class="form-application__icon form-application__icon-mail"></span>
+				</label>
+
+				<label class="form-application__field"
+					><span class="form-application__description">Опис</span>
+					<textarea
+						class="form-application__textarea"
+						name="description"
+						rows="6"
+						placeholder="Чим точнішими будуть надані матеріали – тим точнішими будуть результати прорахунку."
+					></textarea>
+				</label>
+
+				<label class="form-application__file">
+					<span>
+						Ви можете завантажити файл pdf, img... &nbsp;
+						<input class="form-application__load-file" type="file" name="file" />
+					</span>
+				</label>
+
+				<label class="form-application__policy">
+					<input class="form-application__checkbox" type="checkbox" name="policy" required />
+					<span class="form-application__icon-check"></span>
+					<span
+						>Я погоджуюсь з умовами<a class="form-application__link" href="https://ukrcottage.com.ua/politika-konfidenczialnosti" target="_blank">політики конфіденційності</a
+						><span class="form-application__mark">*</span></span
+					>
+				</label>
+
+				<div class="form-application__button-submit-container">
+					<button class="button-primary" type="submit">Відправити</button>
+				</div>
+			</form>
+		</div>
+
+		<!-- Callback Form -->
+		<div class="form-callback-container">
+			<form class="form-callback">
+				<svg class="form-callback__close" onclick="closeFormCallBack()"><use href="./images/svg/icon-moon-pack.svg#cross"></use></svg>
+
+				<h3 class="form-callback__title">Хочете замовити зворотній дзвінок?</h3>
+
+				<p class="form-callback__text">Замовте звротній дзвінок, і з Вами зв'яжеться наш спеціаліст на протязі 15 хвилин якщо зараз робочий час</p>
+
+				<label class="form-callback__field">
+					<input class="form-callback__input" type="text" name="name" placeholder=" " />
+					<span class="form-callback__label">Ім'я</span>
+					<span class="form-callback__icon form-callback__icon-name"></span>
+				</label>
+
+				<label class="form-callback__field">
+					<input class="form-callback__input" type="tel" name="telephone" placeholder=" " required />
+					<span class="form-callback__label">Телефон<span class="form-callback__mark">*</span></span>
+					<span class="form-callback__icon form-callback__icon-tel"></span>
+				</label>
+
+				<div class="form-callback__button-submit-container">
+					<button class="button-primary" type="submit">Замовити</button>
+				</div>
+			</form>
+		</div>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer__block">
+				<!-- Contacts -->
+				<div class="footer__contacts">
+					<h3 class="footer__title">Контакти</h3>
+					<ul class="footer__contacts-list">
+						<li class="footer__contacts-item">
+							<a class="footer__contacts-link" href="tel:+380672121864" title="Зателефонувати на мобільний номер">(067) 212 18 64</a>
+						</li>
+						<li class="footer__contacts-item">
+							<a class="footer__contacts-link" href="tel:+380442992056" title="Зетелефонувати на стаціонарній номер">(044) 299 20 56</a>
+						</li>
+						<li class="footer__contacts-item">
+							<a class="footer__contacts-link" href="mailto:info@ukrcottage.com.ua" title="Написати листа">info@ukrcottage.com.ua</a>
+						</li>
+					</ul>
+					<address class="footer__address">
+						<p class="footer__address-title">Адреса офісу в м. Києві:</p>
+						<a
+							class="footer__address-link"
+							href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB.+%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D0%BA%D0%B0+%D0%97%D0%B0%D0%B1%D0%BE%D0%BB%D0%BE%D1%82%D0%BD%D0%BE%D0%B3%D0%BE,+150,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.354752,30.482551,16z/data=!4m5!3m4!1s0x40d4c864d3e94285:0x56835a4914106bde!8m2!3d50.3547516!4d30.4825512?hl=uk"
+							target="_blank"
+						>
+							<span class="footer__address-text" title="Подивитись на карті">Теремки, Академіка Заболотного, 150А</span>
+						</a>
+						<p class="footer__worktime">Працюємо з <b>8:00</b> до <b>20:00</b>, без вихідних</p>
+					</address>
+				</div>
+
+				<!-- Links -->
+				<div class="footer__links">
+					<h3 class="footer__title">Посилання</h3>
+					<ul class="footer__links-list">
+						<li class="footer__links-item">
+							<a class="footer__links-link" href="./projects.html">Проекти</a>
+						</li>
+
+						<li class="footer__links-item">
+							<a class="footer__links-link" href="./warranty.html">Гарантії</a>
+						</li>
+
+						<li class="footer__links-item">
+							<a class="footer__links-link" href="./reviews.html">Відгуки</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Social -->
+				<div class="footer__social">
+					<h3 class="footer__title">Приєднуйтесь до нас</h3>
+					<ul class="footer__social-list">
+						<li class="footer__social-item">
+							<a class="footer__social-link" href="" title="Instagram">
+								<svg class="footer__social-icon">
+									<use href="./images/svg/icon-moon-pack.svg#instagram"></use>
+								</svg>
+							</a>
+						</li>
+
+						<li class="footer__social-item">
+							<a class="footer__social-link" href="" title="Facebook">
+								<svg class="footer__social-icon">
+									<use href="./images/svg/icon-moon-pack.svg#facebook2"></use>
+								</svg>
+							</a>
+						</li>
+
+						<li class="footer__social-item">
+							<a class="footer__social-link" href="" title="YouTube">
+								<svg class="footer__social-icon">
+									<use href="./images/svg/icon-moon-pack.svg#youtube"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<p class="footer__copyright">UKRCOTTAGE &copy; 2009 - 2022</p>
+		</footer>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
