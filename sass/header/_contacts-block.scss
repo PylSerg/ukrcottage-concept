@@ -1,4 +1,4 @@
-.contacts {
+.contacts-block {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -23,8 +23,8 @@
 	}
 }
 
-.contacts__phone-mobile,
-.contacts__phone-landline {
+.contacts-block__phone-mobile,
+.contacts-block__phone-landline {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -36,18 +36,18 @@
 	transition: all 250ms linear;
 }
 
-.contacts__phone-mobile:hover,
-.contacts__phone-landline:hover,
-.contacts__phone-mobile:focus,
-.contacts__phone-landline:focus {
+.contacts-block__phone-mobile:hover,
+.contacts-block__phone-landline:hover,
+.contacts-block__phone-mobile:focus,
+.contacts-block__phone-landline:focus {
 	background-color: var(--secondary-color);
 }
 
-.contacts__phone-mobile {
+.contacts-block__phone-mobile {
 	margin-right: 10px;
 }
 
-.contacts__phone-mobile::before {
+.contacts-block__phone-mobile::before {
 	content: "";
 
 	background-image: url(../images/png/mobilephone.png);
@@ -60,7 +60,7 @@
 	margin-right: 5px;
 }
 
-.contacts__phone-landline::before {
+.contacts-block__phone-landline::before {
 	content: "";
 
 	background-image: url(../images/png/tellphone.png);
@@ -73,7 +73,7 @@
 	margin-right: 5px;
 }
 
-.contacts__link {
+.contacts-block__link {
 	display: flex;
 	align-items: center;
 
