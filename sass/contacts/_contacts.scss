@@ -1,4 +1,44 @@
 // Common styles
 .contacts,
-.callback {
+.callback,
+.comand {
+	padding: 20px 10px;
+}
+
+.contacts__title,
+.comand__title {
+	color: #555;
+	font-size: 24px;
+	text-align: center;
+
+	text-decoration: underline 6px solid var(--secondary-color);
+
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.contacts__list,
+.comand__list {
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+}
+
+// Contacts
+.contacts__property {
+	font-weight: 700;
+
+	margin-bottom: 5px;
+}
+
+.contacts__value {
+	font-family: Arial;
+
+	margin-bottom: 20px;
+}
+
+.contacts__tell {
+	line-height: 1.35;
 }
