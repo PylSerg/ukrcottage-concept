@@ -1930,8 +1930,8 @@ button {
       justify-content: space-around;
 }
 
-.application,
-.callback {
+.application-button,
+.callback-button {
   font-size: 14px;
   padding: 10px;
   width: 45%;
