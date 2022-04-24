@@ -7,7 +7,7 @@
 	justify-content: center;
 	align-items: center;
 
-	padding: 20px 10px;
+	padding: 40px 10px;
 }
 
 .contacts__title,
@@ -20,7 +20,7 @@
 
 	padding: 0;
 	margin: 0;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 
 .contacts__list,
@@ -58,7 +58,7 @@
 }
 
 .contacts__tell {
-	line-height: 1.35;
+	line-height: 1.5;
 }
 
 .contacts__map {
@@ -70,6 +70,8 @@
 //Callback
 .callback {
 	background-color: #f3f3f3;
+
+	padding-top: 20px;
 }
 
 .callback__title {
@@ -82,6 +84,46 @@
 
 .callback__container {
 	width: 95%;
+}
 
-	margin-bottom: 20px;
+// Our comand
+.comand__list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.comand__item {
+	width: 90%;
+
+	margin-bottom: 50px;
+}
+
+.comand__image {
+	display: flex;
+
+	width: 100%;
+
+	border-radius: 10px 10px 0 0;
+}
+
+.comand__name {
+	text-align: center;
+
+	background-color: #ddd;
+
+	padding: 10px 0 5px 0;
+	margin: 0;
+}
+
+.comand__description {
+	text-align: center;
+
+	background-color: #ddd;
+
+	border-radius: 0 0 10px 10px;
+
+	padding: 0;
+	padding-bottom: 10px;
+	margin: 0;
 }

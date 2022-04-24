@@ -1993,7 +1993,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 10px;
+  padding: 40px 10px;
 }
 
 .contacts__title,
@@ -2005,7 +2005,7 @@ button {
           text-decoration: underline 6px solid var(--secondary-color);
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .contacts__list,
@@ -2034,7 +2034,7 @@ button {
 }
 
 .contacts__tell {
-  line-height: 1.35;
+  line-height: 1.5;
 }
 
 .contacts__map {
@@ -2044,6 +2044,7 @@ button {
 
 .callback {
   background-color: #f3f3f3;
+  padding-top: 20px;
 }
 
 .callback__title {
@@ -2056,7 +2057,48 @@ button {
 
 .callback__container {
   width: 95%;
-  margin-bottom: 20px;
+}
+
+.comand__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comand__item {
+  width: 90%;
+  margin-bottom: 50px;
+}
+
+.comand__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.comand__name {
+  text-align: center;
+  background-color: #ddd;
+  padding: 10px 0 5px 0;
+  margin: 0;
+}
+
+.comand__description {
+  text-align: center;
+  background-color: #ddd;
+  border-radius: 0 0 10px 10px;
+  padding: 0;
+  padding-bottom: 10px;
+  margin: 0;
 }
 
 .footer {
