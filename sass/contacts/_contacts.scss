@@ -2,6 +2,11 @@
 .contacts,
 .callback,
 .comand {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
 	padding: 20px 10px;
 }
 
@@ -20,6 +25,8 @@
 
 .contacts__list,
 .comand__list {
+	width: 90%;
+
 	padding: 0;
 	margin: 0;
 
@@ -29,16 +36,52 @@
 // Contacts
 .contacts__property {
 	font-weight: 700;
+	text-align: center;
 
-	margin-bottom: 5px;
+	background-color: #ddd;
+
+	border-radius: 10px 10px 0 0;
+
+	padding: 5px 0;
 }
 
 .contacts__value {
 	font-family: Arial;
+	text-align: center;
 
+	background-color: #eee;
+
+	border-radius: 0 0 10px 10px;
+
+	padding: 10px;
 	margin-bottom: 20px;
 }
 
 .contacts__tell {
 	line-height: 1.35;
+}
+
+.contacts__map {
+	width: 90%;
+
+	border-radius: 10px;
+}
+
+//Callback
+.callback {
+	background-color: #f3f3f3;
+}
+
+.callback__title {
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+}
+
+.callback__container {
+	width: 95%;
+
+	margin-bottom: 20px;
 }
