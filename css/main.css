@@ -1952,6 +1952,20 @@ button {
           justify-content: center;
 }
 
+.catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 10px;
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1963,6 +1977,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
   padding: 10px;
   margin-bottom: -1px;
   background-color: #fff;
@@ -1971,16 +1986,14 @@ button {
   cursor: pointer;
 }
 
-.card__container {
-  border: var(--border-line);
-  padding-bottom: 10px;
+.card__link {
+  margin: 0;
+  padding: 0;
 }
 
-.card:hover,
-.card:focus {
-  z-index: 10;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.card__container {
+  border: var(--border-line);
+  border-bottom: none;
 }
 
 .card:hover .card__container,
@@ -1989,16 +2002,6 @@ button {
   padding-bottom: 0;
   -webkit-box-shadow: 0px 10px 10px 0px #777;
           box-shadow: 0px 10px 10px 0px #777;
-}
-
-.card:hover .description,
-.card:focus .description {
-  border: var(--border-line);
-  border-top: none;
-  -webkit-box-shadow: 0px 10px 10px 0px #777;
-          box-shadow: 0px 10px 10px 0px #777;
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
 }
 
 .card__image-block {
@@ -2036,8 +2039,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px 0;
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
+  margin: 0;
+  margin-top: 10px;
 }
 
 .card__name {
@@ -2067,6 +2071,7 @@ button {
 }
 
 .card__subtitle {
+  display: none;
   color: #888;
   font-size: 15px;
   font-style: italic;
@@ -2076,18 +2081,16 @@ button {
   margin: 0;
 }
 
-.card__description {
+.card__description-block {
   position: relative;
-  width: 100%;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-.description {
-  position: absolute;
-  top: -1px;
+.card__description-list {
+  position: static;
+  top: 0;
   left: 0;
-  width: 360px;
   margin: 0;
   padding: 10px 20px;
   background-color: #fff;
@@ -2095,13 +2098,25 @@ button {
   border-top: none;
   -webkit-transform-origin: top;
           transform-origin: top;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
   -webkit-transition: var(--transorm-animation);
   transition: var(--transorm-animation);
+  list-style: none;
 }
 
-.description li {
+.card:hover .card__description-list,
+.card:focus .card__description-list {
+  border: var(--border-line);
+  border-top: none;
+  -webkit-box-shadow: 0px 10px 10px 0px #777;
+          box-shadow: 0px 10px 10px 0px #777;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  z-index: 99;
+}
+
+.card__description-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2109,9 +2124,13 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #777;
-  list-style: none;
   padding: 0;
   margin: 5px 0;
+}
+
+.card__description-item:first-child {
+  border-top: var(--border-line);
+  padding-top: 10px;
 }
 
 .description li span {
@@ -2123,16 +2142,6 @@ button {
   width: 100%;
   border-bottom: 2px dotted #ccc;
   margin: 0 10px;
-}
-
-.description li.sub-description {
-  padding-top: 10px;
-}
-
-.description li.description-line {
-  border-top: var(--border-line);
-  margin-top: 20px;
-  margin-bottom: 10px;
 }
 
 .warranty {

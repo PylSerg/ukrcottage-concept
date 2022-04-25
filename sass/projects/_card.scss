@@ -1,10 +1,18 @@
+.catalog {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 20px 10px;
+}
+
 .card {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 
-	// max-width: 402px;
-	// min-width: 402px;
+	width: 100%;
+
 	padding: 10px;
 	margin-bottom: -1px;
 
@@ -15,15 +23,14 @@
 	cursor: pointer;
 }
 
-.card__container {
-	border: var(--border-line);
-	padding-bottom: 10px;
+.card__link {
+	margin: 0;
+	padding: 0;
 }
 
-.card:hover,
-.card:focus {
-	z-index: 10;
-	transform: scale(1.1);
+.card__container {
+	border: var(--border-line);
+	border-bottom: none;
 }
 
 .card:hover .card__container,
@@ -32,15 +39,6 @@
 	padding-bottom: 0;
 
 	box-shadow: 0px 10px 10px 0px #777;
-}
-
-.card:hover .description,
-.card:focus .description {
-	border: var(--border-line);
-	border-top: none;
-	box-shadow: 0px 10px 10px 0px #777;
-
-	transform: scaleY(1);
 }
 
 .card__image-block {
@@ -76,8 +74,9 @@
 	justify-content: space-between;
 	align-items: center;
 
-	margin: 10px 0;
-	padding: 0 20px 0 20px;
+	padding: 0 20px;
+	margin: 0;
+	margin-top: 10px;
 }
 
 .card__name {
@@ -107,29 +106,31 @@
 }
 
 .card__subtitle {
+	display: none;
+
 	color: #888;
 	font-size: 15px;
 	font-style: italic;
 
 	height: 40px;
 	overflow: hidden;
+
 	padding: 0 20px;
 	margin: 0;
 }
 
-.card__description {
+.card__description-block {
 	position: relative;
-	width: 100%;
-	margin: 0;
+
 	padding: 0;
+	margin: 0;
 }
 
-.description {
-	position: absolute;
-	top: -1px;
+.card__description-list {
+	position: static;
+	top: 0;
 	left: 0;
 
-	width: 360px;
 	margin: 0;
 	padding: 10px 20px;
 
@@ -138,19 +139,37 @@
 	border-top: none;
 
 	transform-origin: top;
-	transform: scaleY(0);
+	transform: scaleY(1);
 	transition: var(--transorm-animation);
+
+	list-style: none;
 }
 
-.description li {
+.card:hover .card__description-list,
+.card:focus .card__description-list {
+	border: var(--border-line);
+	border-top: none;
+	box-shadow: 0px 10px 10px 0px #777;
+
+	transform: scaleY(1);
+
+	z-index: 99;
+}
+
+.card__description-item {
 	display: flex;
 	justify-content: space-between;
 
 	color: #777;
 
-	list-style: none;
 	padding: 0;
 	margin: 5px 0;
+}
+
+.card__description-item:first-child {
+	border-top: var(--border-line);
+
+	padding-top: 10px;
 }
 
 .description li span {
@@ -162,14 +181,4 @@
 	width: 100%;
 	border-bottom: 2px dotted #ccc;
 	margin: 0 10px;
-}
-
-.description li.sub-description {
-	padding-top: 10px;
-}
-
-.description li.description-line {
-	border-top: var(--border-line);
-	margin-top: 20px;
-	margin-bottom: 10px;
 }
