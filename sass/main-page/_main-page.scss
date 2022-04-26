@@ -19,6 +19,12 @@
 	padding: 0;
 }
 
+.top-projects__title,
+.advantages__title {
+	text-decoration: var(--underline-style);
+	text-underline-offset: 3px;
+}
+
 .top-projects__item .about-us__description,
 .advantages__item,
 .submit__description {
