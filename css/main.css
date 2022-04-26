@@ -37,7 +37,7 @@ a {
 
 .mobile-menu__active-page {
   color: #fff !important;
-  background-color: var(--secondary-color);
+  background-color: var(--main-color);
   border-radius: 10px;
   margin: 10px;
 }
