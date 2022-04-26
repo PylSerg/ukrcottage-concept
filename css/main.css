@@ -2248,17 +2248,27 @@ button {
 }
 
 .contacts__property {
-  font-weight: 700;
+  color: #fff;
   text-align: center;
-  background-color: #ddd;
+  background-color: var(--main-color);
+  border: var(--border-line);
+  border-bottom: none;
   border-radius: 10px 10px 0 0;
   padding: 5px 0;
 }
 
-.contacts__value {
+.contacts__value,
+.contacts__tell,
+.contacts__email,
+.contacts__address {
+  color: #444;
   font-family: Arial;
   text-align: center;
-  background-color: #eee;
+}
+
+.contacts__value {
+  background-color: #fff;
+  border: var(--border-line);
   border-radius: 0 0 10px 10px;
   padding: 10px;
   margin-bottom: 20px;
@@ -2270,6 +2280,7 @@ button {
 
 .contacts__map {
   width: 90%;
+  border: var(--border-line);
   border-radius: 10px;
 }
 
