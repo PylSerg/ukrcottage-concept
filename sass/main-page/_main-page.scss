@@ -2,20 +2,27 @@
 .top-projects,
 .about-us,
 .advantages,
-.answers,
+.submit,
+.answers {
+	padding: 30px 10px;
+}
+
+.about-us,
 .submit {
-	padding: 30px 10px 50px 10px;
+	@media screen and (min-width: 768px) {
+		padding: 30px;
+	}
 }
 
 .top-projects__title,
 .about-us__title,
 .advantages__title,
-.answers__title,
-.submit__title {
+.submit__title,
+.answers__title {
 	font-size: 24px;
 	color: #444;
 	margin: 0;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	padding: 0;
 }
 
@@ -37,6 +44,12 @@
 }
 
 // Top projects
+.top-projects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .top-projects__title {
 	text-align: center;
 }
@@ -44,14 +57,19 @@
 .top-projects__list {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 
-	width: 100%;
+	width: 95%;
 
 	padding: 0;
 	margin: 0;
 	list-style: none;
+
+	@media screen and (min-width: 1024px) {
+		flex-direction: row;
+	}
 }
 
 .top-projects__item {
@@ -69,10 +87,28 @@
 	margin: 0;
 
 	overflow: hidden;
+
+	@media screen and (min-width: 1024px) {
+		width: 45%;
+	}
 }
 
 .top-projects__item:not(:last-child) {
 	margin-bottom: 30px;
+
+	@media screen and (min-width: 1024px) {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.top-projects__item:nth-child(2n + 1) {
+		margin-right: 20px;
+	}
+
+	.top-projects__item:nth-child(-n + 2) {
+		margin-bottom: 20px;
+	}
 }
 
 .top-projects__link {
@@ -132,12 +168,18 @@
 .advantages__list {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 
 	width: 100%;
 
 	margin: 0;
 	padding: 0;
+
+	@media screen and (min-width: 768px) {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 }
 
 .advantages__price,
@@ -166,8 +208,19 @@
 	box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
 }
 
+.advantages__price,
+.advantages__estimate {
+	@media screen and (min-width: 768px) {
+		margin-right: 20px;
+	}
+}
+
 .advantages__steps {
 	margin-bottom: 0;
+
+	@media screen and (min-width: 768px) {
+		margin-bottom: 20px;
+	}
 }
 
 .advantages__price::before,
@@ -220,11 +273,15 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-around;
+
+	@media screen and (min-width: 768px) {
+		justify-content: center;
+	}
 }
 
 // Modifier for buttons
-.application-button,
-.callback-button {
+.submit__application-button,
+.submit__callback-button {
 	font-size: 14px;
 	padding: 10px;
 
@@ -232,9 +289,23 @@
 	max-width: 200px;
 }
 
+.submit__application-button {
+	@media screen and (min-width: 768px) {
+		margin-right: 50px;
+	}
+}
+
 // Answers
 .answers {
 	background-color: #fff;
+
+	margin-bottom: 30px;
+}
+
+.answers__title {
+	@media screen and (min-width: 768px) {
+		text-align: center;
+	}
 }
 
 .answers__video-container {

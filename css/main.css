@@ -914,7 +914,6 @@ a {
   height: 100%;
   padding: 0;
   margin: 0;
-  margin-right: 10px;
   list-style: none;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
@@ -927,6 +926,7 @@ a {
 @media screen and (max-width: 1365px) {
   .contacts-block {
     width: 0;
+    margin-right: 10px;
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
     -webkit-transition: all 250ms linear;
@@ -1725,20 +1725,27 @@ a {
 .top-projects,
 .about-us,
 .advantages,
-.answers,
-.submit {
-  padding: 30px 10px 50px 10px;
+.submit,
+.answers {
+  padding: 30px 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us,
+  .submit {
+    padding: 30px;
+  }
 }
 
 .top-projects__title,
 .about-us__title,
 .advantages__title,
-.answers__title,
-.submit__title {
+.submit__title,
+.answers__title {
   font-size: 24px;
   color: #444;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding: 0;
 }
 
@@ -1758,6 +1765,19 @@ a {
   list-style: none;
 }
 
+.top-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .top-projects__title {
   text-align: center;
 }
@@ -1768,17 +1788,29 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 95%;
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .top-projects__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .top-projects__item {
@@ -1793,8 +1825,29 @@ a {
   overflow: hidden;
 }
 
+@media screen and (min-width: 1024px) {
+  .top-projects__item {
+    width: 45%;
+  }
+}
+
 .top-projects__item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .top-projects__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .top-projects__item:nth-child(2n + 1) {
+    margin-right: 20px;
+  }
+  .top-projects__item:nth-child(-n + 2) {
+    margin-bottom: 20px;
+  }
 }
 
 .top-projects__link {
@@ -1855,12 +1908,26 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .advantages__price,
@@ -1892,8 +1959,21 @@ a {
           box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (min-width: 768px) {
+  .advantages__price,
+  .advantages__estimate {
+    margin-right: 20px;
+  }
+}
+
 .advantages__steps {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__steps {
+    margin-bottom: 20px;
+  }
 }
 
 .advantages__price::before,
@@ -1951,16 +2031,37 @@ a {
       justify-content: space-around;
 }
 
-.application-button,
-.callback-button {
+@media screen and (min-width: 768px) {
+  .submit__button-section {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.submit__application-button,
+.submit__callback-button {
   font-size: 14px;
   padding: 10px;
   width: 45%;
   max-width: 200px;
 }
 
+@media screen and (min-width: 768px) {
+  .submit__application-button {
+    margin-right: 50px;
+  }
+}
+
 .answers {
   background-color: #fff;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .answers__title {
+    text-align: center;
+  }
 }
 
 .answers__video-container {
