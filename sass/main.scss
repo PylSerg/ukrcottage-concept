@@ -116,6 +116,11 @@ a {
 		width: 512px;
 		height: 288px;
 	}
+
+	@media screen and (min-width: 740px) {
+		width: 720px;
+		height: 405px;
+	}
 }
 
 // Modals

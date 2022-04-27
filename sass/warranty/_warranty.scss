@@ -17,6 +17,15 @@
 	background-color: #f3f3f3;
 
 	padding: 30px 10px;
+
+	@media screen and (min-width: 1024px) {
+		width: 800px;
+
+		padding: 30px;
+		margin: auto;
+
+		border-radius: 10px;
+	}
 }
 
 .warranty__text {
@@ -40,6 +49,12 @@
 	padding: 0;
 	margin: 0;
 	margin-bottom: 20px;
+
+	@media screen and (min-width: 1024px) {
+		text-align: center;
+
+		width: 800px;
+	}
 }
 
 .warranty__label-accent {

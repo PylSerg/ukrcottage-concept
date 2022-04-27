@@ -133,6 +133,13 @@ a {
   }
 }
 
+@media screen and (min-width: 740px) {
+  .video {
+    width: 720px;
+    height: 405px;
+  }
+}
+
 .form-application-container {
   position: fixed;
   top: 0;
@@ -2335,6 +2342,15 @@ a {
   padding: 30px 10px;
 }
 
+@media screen and (min-width: 1024px) {
+  .warranty__text-block {
+    width: 800px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 10px;
+  }
+}
+
 .warranty__text {
   padding: 0;
   margin: 0;
@@ -2362,6 +2378,13 @@ a {
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .warranty__label {
+    text-align: center;
+    width: 800px;
+  }
 }
 
 .warranty__label-accent {
