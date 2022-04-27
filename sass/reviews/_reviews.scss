@@ -13,11 +13,28 @@
 .review {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 
 	width: 100%;
+
+	@media screen and (min-width: 1024px) {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 }
 
 .review__video {
 	margin-bottom: 30px;
+
+	@media screen and (min-width: 1024px) {
+		width: 45vw;
+		height: calc(45vw / 16 * 9);
+	}
+}
+
+.review__video:nth-child(2n + 1) {
+	@media screen and (min-width: 1024px) {
+		margin-right: 30px;
+	}
 }
