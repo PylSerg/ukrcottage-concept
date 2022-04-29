@@ -35,6 +35,17 @@
 }
 
 // Contacts
+.contacts__list {
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		max-width: 850px;
+	}
+}
+
 .contacts__property {
 	color: #fff;
 	text-align: center;
@@ -42,10 +53,22 @@
 	background-color: var(--main-color);
 
 	border: var(--border-line);
-	border-bottom: none;
 	border-radius: 10px 10px 0 0;
 
 	padding: 5px 0;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		align-items: center;
+
+		width: 30%;
+		max-width: 250px;
+
+		padding-left: 20px;
+		margin-bottom: 20px;
+
+		border-radius: 10px 0 0 10px;
+	}
 }
 
 .contacts__value,
@@ -55,17 +78,25 @@
 	color: #444;
 	font-family: Arial;
 	text-align: center;
+
+	@media screen and (min-width: 768px) {
+		width: 60%;
+		max-width: 500px;
+	}
 }
 
 .contacts__value {
 	background-color: #fff;
 
 	border: var(--border-line);
-	// border-top: none;
 	border-radius: 0 0 10px 10px;
 
 	padding: 10px;
 	margin-bottom: 20px;
+
+	@media screen and (min-width: 768px) {
+		border-radius: 0 10px 10px 0;
+	}
 }
 
 .contacts__tell {
@@ -74,6 +105,7 @@
 
 .contacts__map {
 	width: 90%;
+	max-width: 800px;
 
 	border: var(--border-line);
 	border-radius: 10px;
@@ -95,20 +127,50 @@
 }
 
 .callback__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 	width: 95%;
+
+	@media screen and (min-width: 768px) {
+		width: 80%;
+		max-width: 850px;
+	}
+}
+
+.callback__field {
+	max-width: 400px;
 }
 
 // Our comand
 .comand__list {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+
+	@media screen and (min-width: 1024px) {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 }
 
 .comand__item {
 	width: 90%;
+	max-width: 500px;
 
 	margin-bottom: 50px;
+
+	@media screen and (min-width: 1024px) {
+		width: 40%;
+	}
+}
+
+.comand__item:nth-child(2n + 1) {
+	@media screen and (min-width: 1024px) {
+		margin-right: 50px;
+	}
 }
 
 .comand__image {
