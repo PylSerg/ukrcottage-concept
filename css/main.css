@@ -2443,6 +2443,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .warranty__text-block {
+    width: 1200px;
+  }
+}
+
 .warranty__text {
   padding: 0;
   margin: 0;
@@ -2464,6 +2470,12 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 40px 10px 50px 10px;
+}
+
+@media screen and (min-width: 1366px) {
+  .warranty__video {
+    padding: 100px 10px;
+  }
 }
 
 .warranty__label {

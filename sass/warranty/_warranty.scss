@@ -26,6 +26,10 @@
 
 		border-radius: 10px;
 	}
+
+	@media screen and (min-width: 1366px) {
+		width: 1200px;
+	}
 }
 
 .warranty__text {
@@ -43,6 +47,10 @@
 	align-items: center;
 
 	padding: 40px 10px 50px 10px;
+
+	@media screen and (min-width: 1366px) {
+		padding: 100px 10px;
+	}
 }
 
 .warranty__label {
