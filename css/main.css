@@ -2193,7 +2193,7 @@ a {
           justify-content: center;
 }
 
-.catalog__title {
+.catalog-title {
   color: #444;
   font-size: 24px;
   text-align: center;
@@ -2215,8 +2215,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 2400px;
   padding: 0 10px;
-  margin: 30px 0;
+  margin: 30px auto;
 }
 
 @media screen and (min-width: 1024px) {
@@ -2274,9 +2275,21 @@ a {
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .card {
+    margin: 0 10px 20px 10px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .card:nth-child(2n) {
     margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .card:nth-child(2n) {
+    margin: 0 10px 20px 10px;
   }
 }
 

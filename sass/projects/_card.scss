@@ -25,11 +25,19 @@
 		margin: 0;
 		margin-bottom: 30px;
 	}
+
+	@media screen and (min-width: 1366px) {
+		margin: 0 10px 20px 10px;
+	}
 }
 
 .card:nth-child(2n) {
 	@media screen and (min-width: 1024px) {
 		margin-right: 30px;
+	}
+
+	@media screen and (min-width: 1366px) {
+		margin: 0 10px 20px 10px;
 	}
 }
 
