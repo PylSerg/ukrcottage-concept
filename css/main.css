@@ -2681,8 +2681,17 @@ a {
 }
 
 .callback {
+  max-width: 1200px;
   background-color: #f3f3f3;
+  border-radius: 10px;
   padding-top: 20px;
+  margin: auto;
+}
+
+@media screen and (min-width: 1366px) {
+  .callback {
+    margin: 60px auto;
+  }
 }
 
 .callback__title {
@@ -2714,8 +2723,44 @@ a {
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .callback__container {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
+.form-callback__fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1366px) {
+  .form-callback__fields {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 620px;
+  }
+}
+
 .callback__field {
   max-width: 400px;
+}
+
+@media screen and (min-width: 1366px) {
+  .callback__field {
+    max-width: 300px;
+  }
 }
 
 .comand__list {
@@ -2732,6 +2777,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 1200px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -2745,9 +2791,20 @@ a {
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .comand__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 100px;
+  }
+}
+
 .comand__item {
   width: 90%;
-  max-width: 500px;
+  max-width: 400px;
   margin-bottom: 50px;
 }
 
@@ -2761,6 +2818,16 @@ a {
   .comand__item:nth-child(2n + 1) {
     margin-right: 50px;
   }
+}
+
+@media screen and (min-width: 1366px) {
+  .comand__item:nth-child(2n + 1) {
+    margin-right: 0px;
+  }
+}
+
+.comand__item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .comand__image {
