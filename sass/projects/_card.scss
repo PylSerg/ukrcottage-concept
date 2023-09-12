@@ -16,7 +16,7 @@
 
 	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
 
-	transition: var(--transorm-animation);
+	transition: var(--transform-animation);
 
 	cursor: pointer;
 
@@ -145,7 +145,7 @@
 
 	transform-origin: top;
 	transform: scaleY(1);
-	transition: var(--transorm-animation);
+	transition: var(--transform-animation);
 
 	list-style: none;
 }
